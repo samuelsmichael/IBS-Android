@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="TypographyDashes" >
+    <!-- Resource file for non-translatable strings with configuration values -->
+    <eat-comment />
+    
+    <!-- Page content fetches -->
+    <eat-comment />
+    <string name="ibs_config_load_about">about_content</string>
+    <string name="ibs_config_load_contact">contact_content</string>
+    <string name="ibs_config_load_privacy">privacy_content</string>
+    <string name="ibs_config_load_terms">terms_content</string>
+    
+    <string name="ibs_config_load_signup">signup_content</string>
+    <string name="ibs_config_load_signin">signin_content</string>
+    
+    <string name="ibs_config_load_welcome">welcome_content</string>
+    
+    <string name="ibs_config_load_setup">setup_content</string>
+    <string name="ibs_config_load_upgrade">upgrade_content</string>
+    <string name="ibs_config_load_signupEmail">signup_email_content</string>
+    
+    <string name="ibs_config_load_emailRecoveryQuery">email_recover_content</string>
+    <string name="ibs_config_load_emailRecoveryConfirm">email_recover_confirm</string>
+    
+    <string name="ibs_config_load_emailSigninConfirm">email_sigin_confirm</string>
+    <string name="ibs_config_load_facebookSigninConfirm">facebook_sigin_confirm</string>
+    <string name="ibs_config_load_twitterSigninConfirm">twitter_signin_confirm</string>
+    <string name="ibs_config_load_googlePlusSigninConfirm">googleplus_signin_confirm</string>
+    <string name="ibs_config_load_linkedInSigninConfirm">linkedin_signin_confirm</string>
+    
+    <string name="ibs_config_load_contactConfirm">contact_confirm</string>
+    <string name="ibs_config_load_upgradeConfirm">upgrade_confirm</string>
+    <string name="ibs_config_load_setupConfirm">setup_confirm</string>
+    
+    <string name="ibs_config_load_profileConfirm">profile_edit_confirm</string>
+    
+    
+    <string name="ibs_config_load_removeImage">remove_image</string>
+    <string name="ibs_config_load_removeCustomMarking">remove_custommarking</string>    
+        
+    <string name="ibs_config_loadStub_bible">bible_</string>
+    <string name="ibs_config_loadStub_notes">study_notes_</string>
+    <!-- The following are prepending by either bible_ or study_notes_ -->
+    <eat-comment />
+    <string name="ibs_config_load_removeNotes">remove_notes</string>
+    <string name="ibs_config_load_removeTheme">remove_theme</string>
+    <string name="ibs_config_load_removeDivTheme">remove_divtheme</string>    
+    
+    <string name="ibs_config_load_shareEmailContent">share_email_content</string>
+    
+    <string name="ibs_config_load_shareConfirmFacebook">share_facebook_confirm</string>    
+    <string name="ibs_config_load_shareConfirmTwitter">share_twitter_confirm</string>    
+    <string name="ibs_config_load_shareConfirmLinkedIn">share_linkedin_confirm</string>
+    <string name="ibs_config_load_shareConfirmGooglePlus">share_google_plus_confirm</string>
+    <string name="ibs_config_load_shareConfirmEmail">share_email_confirm</string>
+
+    <!-- Config values for posts -->
+    <eat-comment />
+    <string name="ibs_config_value_signin_email">email</string>
+    <string name="ibs_config_value_signin_facebook">facebook</string>
+    <string name="ibs_config_value_signin_google">google</string>
+    <string name="ibs_config_value_signin_linkedin">linkedin</string>
+    <string name="ibs_config_value_signin_twitter">twitter</string>
+    
+    
+
+    <!-- SDK app ids -->
+    <eat-comment />
+    
+    <string name="facebook_app_id">701480829957311</string>
+    
+    <!-- Twitter Configurations -->
+    <string name="twitter_callback">http://inductivebiblestudyapp.com</string>
+    <string name="twitter_consumer_key">fkP05hEWEapbbxveP04YR4i6N</string>
+    <string name="twitter_consumer_secret">W28rqSWpMENmveGZWZHPP3UazgFx93EDspvn3MIABxOFJktW4m</string>
+    <string name="twitter_oauth_verifier">oauth_verifier</string>
+    
+    <!-- Public keys obfuscated:
+    
+    See BillingManager.getKeyPart(int, int) which obfuscates/deobfuscates the keys based on mode.
+    
+     * 1. Take original public key and encode it with this method, logging enabled.
+     * 2. Take log and save the output key part
+     * 3. Place the output (obfuscated key) in resources
+     * 4. Decode with this method.
+     -->
+     <eat-comment />
+    <!-- Encoded using BillingManager.getKeyPart(int, int): mode 0 -->
+    <string name="ibs_public_key_base64_p0">miibiJanbGKQHKIg9W0baqefaaocaq8amiibcGkcaqeaGESTHtJN0frkefPitgUdTO+QGsUBCZt+ON+v28C7OfUVSGUeZwflNzWaTIwT5A1FrvnxcZn+wiFOY5VoCeSOy+V</string>
+    <!-- Encoded using BillingManager.getKeyPart(int, int): mode 1 -->
+    <string name="ibs_public_key_base64_p1">vFfmIhf0UL5AJNFT3P86W7+KeCU6YRmdsy16F86zmqYCWGGQEd+YJ0rFo3d+WOON/SuQCkeDZYaR+RZBxlofmsaoCQpfanIL21BiT6e+VlVlspFUEmDtPFXo8apWcxfJNOL</string>
+    <!-- Encoded using BillingManager.getKeyPart(int, int): mode 2 -->
+    <string name="ibs_public_key_base64_p2">baqadiq0cFmW6bm2Rj8nRNRXVLfqjjLzuaws0m4xYcdyIrrhf96y58Po1VzFRtu6E6Y2R6PK9OIUyu0X07iBr7PVWCuoehV3EjWksdC63Boez6Kd44JM3OlAWXyIRLDged</string>
+
+     <!-- Links  -->
+     <eat-comment />
+    
+    <!-- Share links -->
+    <string name="ibs_share_url_fb">https://www.facebook.com/InductiveBibleStudyApp</string>
+    <!-- The current url is that of the facebook api one. It may be replaced with a server one -->
+    <string name="ibs_share_icon_url">https://fbcdn-photos-d-a.akamaihd.net/hphotos-ak-xaf1/t39.2081-0/p128x128/11414441_701519899953404_1647164763_n.png</string>
+    <!-- The youtube help chanel -->
+    <string name="ibs_help_url">https://www.youtube.com/channel/UCaHUNn_qQrke28m27czvUBw/videos</string>
+    
+    <!-- End basic Configurations -->    
+    <eat-comment />
+    
+    <!-- Preference keys & values v0.4.0-20150826 -->
+    <!-- DO NOT CHANGE THESE VALUES -->
+    <eat-comment />
+    <!-- String. Login type, expects: email, facebook, google, linkedin, twitter.
+    Set only during login/sign up. -->
+    <string name="ibs_pref_KEY_SIGNIN_TYPE">ibs_pref_KEY_SIGNIN_TYPE</string>
+
+    <!-- String. User id of last login -->
+    <string name="ibs_pref_KEY_USER_SOCIAL_ID">ibs_pref_KEY_USER_SOCIAL_ID</string>   
+    <!-- String. Access token, used for some logins. Set only during login/sign up. -->
+    <string name="ibs_pref_KEY_SIGNIN_ACCESS_TOKEN">ibs_pref_KEY_SIGNIN_ACCESS_TOKEN</string>
+    <!-- String. Access token secret, used for some logins. Set only during login/sign up. -->
+    <string name="ibs_pref_KEY_SIGNIN_ACCESS_TOKEN_SECRET">ibs_pref_KEY_SIGNIN_ACCESS_TOKEN_SECRET</string>
+    
+    
+    <!-- String. The application token to work with OUR backend. -->
+    <string name="ibs_pref_KEY_IBS_ACCESS_TOKEN">ibs_pref_KEY_IBS_ACCESS_TOKEN</string>
+    
+    <!-- Boolean. The user has set up.-->
+    <string name="ibs_pref_KEY_USER_HAS_SETUP">ibs_pref_KEY_USER_HAS_SETUP</string>
+    
+    <!-- String. The user image profile url. -->
+    <string name="ibs_pref_KEY_USER_PROFILE_IMAGE_URL">ibs_pref_KEY_USER_PROFILE_IMAGE_URL</string>
+    
+    <!-- String. The user's unique ibs id-->
+    <string name="ibs_pref_KEY_USER_MEMBER_ID">ibs_pref_KEY_USER_MEMBER_ID</string>
+    <!-- String. The user's first name -->
+    <string name="ibs_pref_KEY_USER_FIRSTNAME">ibs_pref_KEY_USER_FIRSTNAME</string>
+    <!-- String. The user's last name -->
+    <string name="ibs_pref_KEY_USER_LASTNAME">ibs_pref_KEY_USER_LASTNAME</string>
+    <!-- String. The user's email address -->
+    <string name="ibs_pref_KEY_USER_EMAIL">ibs_pref_KEY_USER_EMAIL</string>
+    <!-- String. The user's address -->
+    <string name="ibs_pref_KEY_USER_ADDRESS">ibs_pref_KEY_USER_ADDRESS</string>
+    <!-- String. The user's city -->
+    <string name="ibs_pref_KEY_USER_CITY">ibs_pref_KEY_USER_CITY</string>
+    <!-- String. The user's state -->
+    <string name="ibs_pref_KEY_USER_STATE">ibs_pref_KEY_USER_STATE</string>
+    <!-- String. The user's zip -->
+    <string name="ibs_pref_KEY_USER_ZIP">ibs_pref_KEY_USER_ZIP</string>
+    <!-- String. The selected bible translation id -->
+    <string name="ibs_pref_KEY_BIBLE_TRANSLATION_ID">ibs_pref_KEY_BIBLE_TRANSLATIONS_IDS</string>
+    <!-- String. The selected bible translation name -->
+    <string name="ibs_pref_KEY_BIBLE_TRANSLATION_NAME">ibs_pref_KEY_BIBLE_TRANSLATION_NAME</string>   
+    
+    <!-- String. The user bio/about me. -->
+    <string name="ibs_pref_KEY_USER_BIO">ibs_pref_KEY_USER_BIO</string>
+    
+    <!-- Long. The last time (UTC, since epoch) since last profile update. Set in CurrenUser. -->
+    <string name="ibs_pref_KEY_PROFILE_UPDATE">ibs_pref_KEY_PROFILE_UPDATE</string>
+    
+    
+    <!-- Prefernce type Values -->
+    <eat-comment />
+    <string name="ibs_pref_VALUE_SIGNIN_EMAIL">email</string>
+    <string name="ibs_pref_VALUE_SIGNIN_FACEBOOK">facebook</string>
+    <string name="ibs_pref_VALUE_SIGNIN_GOOGLE">google</string>
+    <string name="ibs_pref_VALUE_SIGNIN_LINKEDIN">linkedin</string>
+    <string name="ibs_pref_VALUE_SIGNIN_TWITTER">twitter</string>
+    
+</resources>

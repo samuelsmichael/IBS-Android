@@ -1,0 +1,73 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    
+    tools:context="com.inductivebiblestudyapp.ui.fragments.InfoFragment" 
+    android:fillViewport="true"
+    >
+    
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    
+	    android:layout_gravity="center_horizontal"
+	    android:gravity="center_horizontal" >
+	     <ImageView
+		        android:id="@+id/ibs_img_logo"
+		        android:layout_width="wrap_content"
+		        android:layout_height="@dimen/ibs_logo_land_height"
+		        android:src="@drawable/ic_logo"
+				android:contentDescription="@string/ibs_contentDescription_logo"
+				android:layout_marginTop="@dimen/min_item_margin"
+				/>
+	     
+	     <TextView
+		        android:id="@+id/ibs_details_text_title"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="" 
+		        style="@style/TitleText.Large"
+		        android:layout_marginTop="@dimen/min_item_margin"
+		        />
+	     
+	      <FrameLayout 
+	         android:layout_width="match_parent"
+		     android:layout_height="0dp"
+		     android:minHeight="150dp"
+		     android:layout_weight="1.0"
+		        >
+	
+		         <ProgressBar
+		             android:id="@+id/ibs_progress_bar_loading"
+		             style="TextLoadingProgressBar"
+		             android:layout_width="wrap_content"
+		             android:layout_height="wrap_content"
+		             android:layout_gravity="center" />
+		
+		     <TextView
+			        android:id="@+id/ibs_details_text_content"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="" 
+			        android:layout_gravity="center" 
+			        style="@style/DescriptiveText"
+			        android:layout_marginTop="@dimen/min_item_margin"
+			        />
+	     </FrameLayout>
+	     
+	      <include layout="@layout/viewstub_footer"
+	    		android:id="@+id/ibs_footer"
+		        android:layout_width="match_parent"
+		        android:layout_gravity="bottom"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="@dimen/ibs_home_item_margins"      
+		        />
+	
+	</LinearLayout>
+</ScrollView>

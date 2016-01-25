@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/ibs_markings_displayimg_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/ibs_max_display_height"
+        android:maxHeight="@dimen/ibs_max_display_height"
+        android:maxWidth="@dimen/ibs_max_display_width"
+        
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitCenter"
+        
+        android:src="@null" />
+
+    <TextView
+        android:id="@+id/ibs_markings_displayimg_label_img_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/ibs_markings_displayimg_button_edit"
+        android:layout_toLeftOf="@+id/ibs_markings_displayimg_button_edit"
+        android:layout_marginRight="10dp"
+        
+        android:text=""
+        style="@style/SubText" />
+    
+    <ImageButton
+	    android:id="@+id/ibs_markings_displayimg_button_edit"
+	    
+	    android:src="@drawable/ic_edit"
+	    android:background="@drawable/btn_generic_accent_background"
+	    style="@style/ProfileEditButtonStyle"
+	    android:contentDescription="@string/ibs_contentDescription_editImage"
+	    
+	    android:layout_alignTop="@+id/ibs_markings_displayimg_button_delete"
+	    android:layout_toLeftOf="@+id/ibs_markings_displayimg_button_delete"
+	    
+	     />
+    <ImageButton
+	    android:id="@+id/ibs_markings_displayimg_button_delete"
+	    	    
+	    android:src="@drawable/ic_delete"
+	    android:background="@drawable/btn_generic_accent_background"
+	    style="@style/ProfileEditButtonStyle"
+	    android:contentDescription="@string/ibs_contentDescription_deleteImage"
+	    android:layout_marginTop="-2dp"
+	    android:layout_alignParentRight="true"
+	    android:layout_below="@+id/ibs_markings_displayimg_preview"
+	     />
+
+</RelativeLayout>

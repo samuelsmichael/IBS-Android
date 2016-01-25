@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- The app name -->
+    <string name="app_name">Inductive Bible Study</string>
+    <string name="app_name_short">IBS</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Activity titles -->
+    <eat-comment />
+
+    <string name="title_activity_sign_up_email">Sign Up by Email</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_setup_account">Setup Your Account</string>
+    <string name="title_activity_footer_info">Information</string>
+    <string name="title_activity_upgrade">Upgrade my Account</string>
+    <string name="title_activity_share">Share Notes</string>
+    <string name="title_activity_google_image_search">Google Image Search</string>
+    <string name="title_activity_create_image">Create Image Marking</string>
+    <string name="title_activity_twitter_login">Log in with Twitter</string>
+    <string name="title_activity_twitter_share">Share with Twitter</string>
+    <string name="title_activity_linked_in_share">Share with Linked In</string>
+    <string name="title_activity_email_share">Share with Email</string>
+    <!-- Content descriptions: For accesibility purposes -->
+    <eat-comment />
+
+    <string name="ibs_contentDescription_logo">Inductive Bible Study</string>
+    <string name="ibs_contentDescription_social_email">E-mail</string>
+    <string name="ibs_contentDescription_social_linkedin">Linked In</string>
+    <string name="ibs_contentDescription_social_facebook">Facebook</string>
+    <string name="ibs_contentDescription_social_googlePlus">Google Plus</string>
+    <string name="ibs_contentDescription_social_twitter">Twitter</string>
+    <string name="ibs_contentDescription_editProfile">Edit Profile</string>
+    <string name="ibs_contentDescription_cancelChanges">Cancel changes</string>
+    <string name="ibs_contentDescription_saveChanges">Save changes</string>
+    <string name="ibs_contentDescription_editImage">Edit image</string>
+    <string name="ibs_contentDescription_deleteImage">Delete image</string>
+    <string name="ibs_contentDescription_deleteMarking">Delete Custom Marking</string>
+    <string name="ibs_contentDescription_format_highlight">Highlight</string>
+    <string name="ibs_contentDescription_format_image">Add Image</string>
+    <string name="ibs_contentDescription_format_underline_single">Single underline</string>
+    <string name="ibs_contentDescription_format_underline_double">Double underline</string>
+    <string name="ibs_contentDescription_format_strikethrough">Strick through</string>
+    <string name="ibs_contentDescription_format_outline">Outline</string>
+    <string name="ibs_contentDescription_format_tag">Add tag</string>
+    <string name="ibs_contentDescription_format_box_single">Single box</string>
+    <string name="ibs_contentDescription_format_box_double">Double box</string>
+    <string name="ibs_contentDescription_format_color">Set color</string>
+    <string name="ibs_contentDescription_format_bold">Bold</string>
+    <string name="ibs_contentDescription_format_italics">Italics</string>
+    <string name="ibs_contentDescription_editTheme">Edit Chapter Theme</string>
+    <string name="ibs_contentDescription_shareTheme">Share Chapter Theme</string>
+    <string name="ibs_contentDescription_deleteTheme">Delete Chapter Theme</string>
+    <string name="ibs_contentDescription_share">Share</string>
+    <string name="ibs_contentDescription_delete">Delete</string>
+    <string name="ibs_contentDescription_previousChapter">Previous Chapter</string>
+    <string name="ibs_contentDescription_nextChapter">Next Chapter</string>
+    <string name="ibs_contentDescription_poweredByGoogle">Powered by Google</string>
+    <string name="ibs_contentDescription_profilePicture">Profile picture</string>
+    <string name="ibs_contentDescription_readNote">Read note</string>
+    <string name="ibs_contentDescription_viewImage">Open image marking</string>
+    <string name="ibs_contentDescription_linkedIn_back">Cancel Button</string>
+    <string name="ibs_contentDescription_twitter_back">Cancel Button</string>
+    
+    <string name="ibs_contentDescription_filterNotes">Filter notes</string>
+
+    <!-- Titles -->
+    <eat-comment />
+
+    <string name="ibs_title_about">About Us</string>
+    <string name="ibs_title_terms">Terms of Service</string>
+    <string name="ibs_title_privacy">Privacy Policy</string>
+    <string name="ibs_title_contact">Contact Us</string>
+    <string name="ibs_title_setup_account">Set Up Your Account</string>
+    <string name="ibs_title_congradulations">Congrats!</string>
+    <string name="ibs_title_success">Success!</string>
+    <string name="ibs_title_upgradeYourAccount">Upgrade my Account</string>
+    <string name="ibs_title_addedit_image">Add/Edit Image</string>
+    <string name="ibs_title_add_image">Add Image</string>
+    <string name="ibs_title_edit_image">Edit Image</string>
+    <string name="ibs_title_addedit_note">Add/Edit Note</string>
+    <string name="ibs_title_edit_note">Edit Note</string>
+    <string name="ibs_title_add_note">Add Note</string>
+    <string name="ibs_title_createNewMarking">Create a New Marking</string>
+    <string name="ibs_title_defineEdit_chapterTheme">Add/Edit Chapter Theme</string>
+    <string name="ibs_title_add_chapterTheme">Add Chapter Theme</string>
+    <string name="ibs_title_edit_chapterTheme">Edit Chapter Theme</string>
+    <string name="ibs_title_defineEdit_divTheme">Define/Edit Division Theme</string>
+    <string name="ibs_title_add_divTheme">Define Division Theme</string>
+    <string name="ibs_title_edit_divTheme">Edit Division Theme</string>
+    <string name="ibs_title_remove">Remove</string>
+    <string name="ibs_title_customMarkings">Custom Markings</string>
+    <string name="ibs_title_customMarkingsShort">Markings</string>
+    <string name="ibs_title_removeNote">Remove Note</string>
+    <string name="ibs_title_removeChapterTheme">Remove Chapter Theme</string>
+    <string name="ibs_title_removeDivisionTheme">Remove Division Theme</string>
+    <string name="ibs_title_pickTextColor">Select Text Color</string>
+    <string name="ibs_title_pickHighlightColor">Select Highlight Color</string>
+    <string name="ibs_title_pickEmailShare">Email with&#8230;</string>
+
+    <!-- Accepts one string: book name. -->
+    <string name="ibs_title_bookOfFormat">Book of <xliff:g id="book_name">%1$s</xliff:g></string>
+
+    <!-- Formatted string. Expects 2 inputs: Chapter name, Chapter theme -->
+    <string name="ibs_title_chapterWithTheme"><xliff:g id="chapter_name">%1$s</xliff:g> - <xliff:g id="chapter_theme">%2$s</xliff:g></string>
+    
+    <!-- Formatted string. Expects 1 input. Twitter handle -->
+    <string name="ibs_title_twitter_shareHandle">\@<xliff:g id="twitter_handle">%1$s</xliff:g></string>
+    
+    <!-- Formatted string. Expects 2 inputs: 1. Strong's number (as string), 2. The word being defined.
+    Also expects to be rendered by Html.fromHtml(String) (the word is italics).  -->
+    <string name="ibs_title_strongsDef_strongsNum_word">Strong\'s <xliff:g id="strongs_number"
+        >%1$s</xliff:g> &lt;i&gt; (<xliff:g id="word_defined">%2$s</xliff:g>) &lt;/i&gt;</string>
+    
+    <!-- Formatted string. Expects 1 inputs: 1. Strong's number (as string).  -->
+    <string name="ibs_title_strongsDef_strongsNum">Strong\'s <xliff:g id="strongs_number">%1$s</xliff:g></string>
+    
+    <string name="ibs_title_strongsDef_additional">Additional References</string>
+
+    <!-- Labels -->
+    <string name="ibs_label_translations">Default Translation</string>
+    <string name="ibs_label_about">Write some text about you:</string>
+    <string name="ibs_label_booksInOrder">Books of the Bible in Canonical Order</string>
+    <string name="ibs_label_oldTestament">Old Testament</string>
+    <string name="ibs_label_newTestament">New Testament</string>
+    <string name="ibs_label_book">Book</string>
+    <string name="ibs_label_chapter">Chapter</string>
+    <string name="ibs_label_verse">Verse</string>
+    <string name="ibs_label_chapters">Chapters</string>
+    <string name="ibs_label_themeApplied">Theme Applied</string>
+    <string name="ibs_label_uploadFromGallery">Upload Image from Gallery</string>
+    <string name="ibs_label_library">Select from Library</string>
+    <string name="ibs_label_sortBy">Sort By</string>
+    <string name="ibs_label_markingsToApply">Markings to apply:</string>
+    <string name="ibs_label_useExistingMarking">Use an Existing Marking</string>
+    <string name="ibs_label_definition">Definition</string>
+    <string name="ibs_label_crossReferences">Cross References</string>
+    <string name="ibs_label_verseDetails">View Verse Details</string>
+    <string name="ibs_label_shareWith">Share with&#8230;</string>
+
+    <!-- Formatted string. Expects one item (translation/version such as KJV or NASB). -->
+    <string name="ibs_label_translationsSelected">Default Translation: <xliff:g id="version">%1$s</xliff:g></string>
+    <string name="ibs_label_translationsAvailable">Available Translations:</string>
+    <string name="ibs_label_translationsSet">Default Translation:</string>
+    <string name="ibs_label_changePassword">Change Your Password:</string>
+    <string name="ibs_label_shareLettering">Share Marking</string>
+    <string name="ibs_label_deleteLettering">Remove Marking</string>
+    <string name="ibs_label_linkedIn_shareWith">Share with:</string>
+    <string name="ibs_label_linkedIn_sharePublic">Public</string>
+    <string name="ibs_label_linkedIn_shareConnections">Connections</string>
+
+    <!-- Formatted string. Expects a single string: query search. -->
+    <string name="ibs_label_googleImageSearch_resultsFor">Results for \"<xliff:g id="query">%1$s</xliff:g>\"</string>
+    
+    <!-- Formatted string. Expects a 2 strings: 1. number string, 2. search query term -->
+    <string name="ibs_label_searchResultsNumbered"
+        ><xliff:g id="count">%1$s</xliff:g> results for \"<xliff:g id="query">%2$s</xliff:g>\"</string>
+    <!-- Formatted string. Expects a single string: search query term -->
+    <string name="ibs_label_searchingFor">Searching for \"<xliff:g id="query">%1$s</xliff:g>\"</string>
+    
+    <string name="ibs_label_verseDetails_wordStudy">Word Study</string>
+    
+    <string name="ibs_label_bibleSearch_narrowBy">Narrow search by:</string>
+    <string name="ibs_label_bibleSearch_books">Book</string>
+    <string name="ibs_label_bibleSearch_chapters">Chapter</string>
+    <string name="ibs_label_bibleSearch_verseStart">From verse</string>
+    <string name="ibs_label_bibleSearch_verseEnd">To verse</string>
+    
+    
+    <string name="ibs_spinner_bibleSearch_all">All</string>
+    
+    
+    <!-- Hints -->
+    <eat-comment />
+
+    <string name="ibs_hint_search">Search</string>
+    <string name="ibs_hint_name">Name</string>
+    <string name="ibs_hint_email">Email</string>
+    <string name="ibs_hint_phone">Phone</string>
+    <string name="ibs_hint_message">Message</string>
+    <string name="ibs_hint_password">Password</string>
+    <string name="ibs_hint_email_enter">Email</string>
+    <string name="ibs_hint_password_unchanged">Password Unchanged</string>
+    <string name="ibs_hint_password_choose">Choose Your Password</string>
+    <string name="ibs_hint_password_repeat">Repeat Password</string>
+    <string name="ibs_hint_name_first">First Name</string>
+    <string name="ibs_hint_name_last">Last Name</string>
+    <string name="ibs_hint_address">Address</string>
+    <string name="ibs_hint_city">City</string>
+    <string name="ibs_hint_state">State</string>
+    <string name="ibs_hint_zip">Zip Code</string>
+    <string name="ibs_hint_address_line1">Address</string>
+    <string name="ibs_hint_address_line2">City, State, Zip</string>
+    <string name="ibs_hint_about">Write something about yourself&#8230;</string>
+    <string name="ibs_hint_image_name">Image name</string>
+    <string name="ibs_hint_search_google_images">Search Google Images</string>
+    <string name="ibs_hint_customMarking">Custom marking name</string>
+    <string name="ibs_hint_enterYourText">Enter your text</string>
+    <string name="ibs_hint_linkedIn_shareMessage">Share an update&#8230;</string>
+    
+    <string name="ibs_hint_email_shareMessage">Compose email&#8230;</string>
+    <string name="ibs_hint_email_shareAddresses">Send to&#8230;</string>
+    
+    <string name="ibs_hint_twitter_shareMessage">What\'s happening?</string>
+
+    <!-- Radio texts -->
+    <eat-comment />
+
+    <string name="ibs_radio_sort_recentlyUsed">recently used</string>
+    <string name="ibs_radio_sort_byName">by name</string>
+
+    <!-- Checkbox texts -->
+    <eat-comment />
+    
+    <string name="ibs_checkbox_chapterThemes">Chapter themes</string>    
+    <string name="ibs_checkbox_divisionThemes">Division themes</string>    
+    <string name="ibs_checkbox_notes">Notes</string>
+    <string name="ibs_checkbox_imageMarkings">Image markings</string>
+    <string name="ibs_checkbox_letteringMarkings">Markings</string>
+    
+    <!-- Formatted string. Takes 2 inputs: 1. title, 2. count -->
+    <string name="ibs_checkbox_crossReferenceTitle"><xliff:g id="title">%1$s</xliff:g> (<xliff:g id="count">%2$s</xliff:g>)</string>
+
+    <!-- Button texts -->
+    <eat-comment />
+
+    <string name="ibs_button_signIn">Sign In</string>
+    <string name="ibs_button_signUp">Sign Up</string>
+    <string name="ibs_button_submit">Submit</string>
+    <string name="ibs_button_restore">Restore</string>
+    <string name="ibs_button_confirm">Confirm</string>
+    <string name="ibs_button_upgrade_long">Upgrade my account</string>
+    <string name="ibs_button_upgrade">Upgrade</string>
+    <string name="ibs_button_create">Create New</string>
+    <string name="ibs_button_viewAll">View All</string>
+    <string name="ibs_button_yes">Yes</string>
+    <string name="ibs_button_no">No</string>
+    <string name="ibs_button_save">Save</string>
+    <string name="ibs_button_cancel">Cancel</string>
+    <string name="ibs_button_newImage">New Image</string>
+    <string name="ibs_button_newLettering">New Lettering</string>
+    <string name="ibs_button_linkedin_share">Share</string>
+    <string name="ibs_button_twitter_share">Tweet</string>
+    <string name="ibs_button_email_share">Send</string>
+    
+    <string name="ibs_button_search">Search</string>
+    
+    <string name="ibs_button_apply">Apply</string>
+    <string name="ibs_button_filterNotes"></string>
+    
+    <!-- Profile Tab titles -->
+    <eat-comment />
+
+    <string-array name="ibs_profile_tab_titles">
+        <item>Profile</item>
+        <item>Bible</item>
+        <item>Notes</item>
+        <item>Markings</item>
+    </string-array>
+
+    <!-- Navigation drawer/Footer strings -->
+    <eat-comment />
+    <string name="ibs_drawer_open">Select Information Page or Action</string>
+	<string name="ibs_drawer_close">Profile</string>
+	
+	<string name="ibs_navbar_help">Help</string>
+	<string name="ibs_navbar_logout">Logout</string>
+	
+
+    <string name="ibs_footer_home">Home</string>
+    <string name="ibs_footer_about">About</string>
+    <string name="ibs_footer_contact">Contact</string>
+    <string name="ibs_footer_privacy">Privacy</string>
+    <string name="ibs_footer_terms">Terms</string>
+
+    <!-- Formatted strings -->
+    <eat-comment />
+
+    <!-- Additonal texts -->
+    <eat-comment />
+
+    <string name="ibs_text_logoutConfirm">Are you sure you want to logout?</string>
+    
+    <string name="ibs_text_forgotPassword">Forgot Password?</string>
+    <string name="ibs_text_recoveryMessage">Mail with restore link sent.
+        \nPlease check your email.</string>
+    <string name="ibs_text_signupConfirmation">Sign Up Confirmed.</string>
+    <string name="ibs_text_profileSuccess">Profile successfully saved!</string>
+    <string name="ibs_text_profileNoChangesMade">No changes made to profile.</string>
+    <string name="ibs_text_contactSuccess">Your message has been received!</string>
+    <string name="ibs_text_setupSuccess">You have successfully set up your account.
+        \nClick here to sign in:</string>
+    <string name="ibs_text_deleteImageConfirm">Are you sure you want to remove this Image? This action is NOT reversible!</string>
+    <string name="ibs_text_deleteCustomMarkingConfirm">Are you sure you want to remove this Custom Marking? This action is NOT reversible!</string>
+    <string name="ibs_text_deleteNoteConfirm">Do you really want to remove this Note?</string>
+    <string name="ibs_text_deleteChapterThemeConfirm">Do you really want to remove this Chapter Theme?</string>
+    <string name="ibs_text_deleteDivThemeConfirm">Do you really want to remove this Division Theme?</string>
+    <string name="ibs_text_success">Success!</string>
+    <string name="ibs_text_changesSaved">Changes Saved</string>
+    <string name="ibs_text_deleteSuccess_image">Image removed</string>
+    <string name="ibs_text_deleteSuccess_lettering">Marking removed</string>
+    
+    <string name="ibs_text_deleteSuccess_imageMarking">Image marking removed</string>
+    <string name="ibs_text_deleteSuccess_letteringMarking">Marking removed</string>
+    
+    <string name="ibs_text_deleteSuccess_note">Note removed</string>
+    <string name="ibs_text_deleteSuccess_chapterTheme">Chapter theme removed</string>
+    <string name="ibs_text_deleteSuccess_divisionTheme">Division theme removed</string>
+    <string name="ibs_text_saving">Saving&#8230;</string>
+    <string name="ibs_text_sending">Sending&#8230;</string>
+    <string name="ibs_text_loading">Loading&#8230;</string>
+    <string name="ibs_text_tweeting">Tweeting&#8230;</string>
+    <string name="ibs_text_sharing">Sharing&#8230;</string>
+    <string name="ibs_text_searching">Searching&#8230;</string>
+    
+    <!--
+    Formatted string. Expects one item (translation/version such as KJV or NASB).
+    Used as a stub for listing the bible versions.
+    -->
+    <string name="ibs_text_translationLineStub"> &#8226; <xliff:g id="version">%1$s</xliff:g></string>
+    <string name="ibs_text_pasteNote">You can now paste your note here :)</string>    
+    <string name="ibs_text_share_copiedToClipboard">Text copied to clipboard.</string>      
+    <string name="ibs_text_studyNotes_unsetText">-</string>    
+    
+     <!-- Formatted string. Expects 2 values: 
+     1. Transliterate text, 2. The phoentic text. 
+     The string expects to be rendered via Html.fromHtml(String). 
+     -->
+    <string name="ibs_text_strongsDef_transliteration_hebrew">Hebrew, &lt;b&gt;<xliff:g id="transliteration"
+        >%1$s</xliff:g>&lt;/b&gt; &#160;&#91;&lt;i&gt;<xliff:g id="phonetic">%2$s</xliff:g>&lt;/i&gt;&#93;</string>
+    
+     <!-- Formatted string. Expects 2 values: 
+     1. Transliterate text, 2. The phoentic text. 
+     The string expects to be rendered via Html.fromHtml(String). 
+     -->
+    <string name="ibs_text_strongsDef_transliteration_greek">Greek, &lt;b&gt;<xliff:g id="transliteration"
+        >%1$s</xliff:g>&lt;/b&gt; &#160;&#91;&lt;i&gt;<xliff:g id="phonetic">%2$s</xliff:g>&lt;/i&gt;&#93;</string>
+    
+    
+    <!-- Formatted string. Expects 1 value: 1. Part of speech. -->
+    <string name="ibs_text_strongsDef_partOfSpeech">\u2014<xliff:g id="part_of_speech">%1$s</xliff:g></string>
+    <!-- Formatted string. Expects 1 value: 1. Origin of the word. -->
+    <string name="ibs_text_strongsDef_origin">Origin: <xliff:g id="word_origin">%1$s</xliff:g>.</string>
+    
+    <!-- Formatted string. Expects 1 value: 1. Internet Public Domain (IPD) definition -->
+    <string name="ibs_text_strongsDef_definition_ipd">Definition:&lt;br /&gt;<xliff:g id="definition">%1$s</xliff:g></string>
+    
+
+    
+    <!-- Nothing found strings  -->
+    <eat-comment />
+    <string name="ibs_text_noImages_library">No images available.</string>
+    <string name="ibs_text_noImages_user">No images available. Tap create new to add new images.</string>
+    <string name="ibs_text_noImages_user_recent">No recent images available.</string>
+    <string name="ibs_text_noLetterings_library">No letterings available.</string>
+    <string name="ibs_text_noLetterings_user">No letterings available. Tap create new to add new lettering styles.</string>
+    <string name="ibs_text_noLetterings_user_recent">No recent letterings available.</string>
+    <string name="ibs_text_noStudyNotes">No study notes available.</string>  
+    
+    <string name="ibs_text_noImageResults">No matching images found.</string>
+    <string name="ibs_text_noLetteringResults">No matching markings found.</string>
+    
+    <string name="ibs_text_noBibleResults">No results found.</string>
+    <string name="ibs_text_noStudyNotesResults">No results found.</string>
+    
+    <string name="ibs_text_noCrossReferences">None.</string>
+    
+    <!-- Prepared string. Takes one string. -->
+    <string name="ibs_text_price">Price: <xliff:g id="cost">%1$s</xliff:g></string>
+    
+    
+    <!-- Error strings -->
+    <eat-comment />
+
+    <string name="ibs_error_cannotBeEmpty">Cannot be empty.</string>
+    <string name="ibs_error_imagePathMustBeSet">Must set an image.</string>
+    <string name="ibs_error_selectTranslationVersion">You must select a translation</string>
+    <string name="ibs_error_cannotLoadTranslations">Sorry! Cannot load translations!</string>
+    <string name="ibs_error_emailAccountExists">This email address is already in use. Try password recovery.</string>
+    <string name="ibs_error_passwordOrEmailInvalid">Either password or email is invalid.</string>
+    <string name="ibs_error_passwordsMustMatch">Passwords must match.</string>
+    <string name="ibs_error_sorry">Sorry!</string>
+    <string name="ibs_error_cannotLoadContent">Sorry! Cannot load content!</string>
+    <string name="ibs_error_cannotConnect">Cannot connect, try again later.</string>
+    <string name="ibs_error_cannotConnect_short">Cannot connect.</string>
+    <string name="ibs_error_cannotSendMessage">Sorry! Message could not be sent!</string>
+    <string name="ibs_error_cannotLoadImage">Cannot load image, try again later.</string>
+    
+    <string name="ibs_error_address2_cityStateZip">Must be in the format of \"City, State, Zip\"</string>
+    
+    
+    <string name="ibs_error_email_cannotSend">Email failed to send, try again later.</string>
+    <string name="ibs_error_email_mustSpecifyRecipients">Must specify at least one recipient.</string>
+    <!-- Format string. Takes one string. -->
+    <string name="ibs_error_email_notAValidEmail">\"<xliff:g id="input">%1$s</xliff:g>\" is not a valid email address</string>
+    
+    <string name="ibs_error_billing_cannotPurchaseAlreadyOwn">You already purchased this!</string>
+    <string name="ibs_error_billing_invalidTransaction">Purchase cannot be completed.</string>
+    <string name="ibs_error_billing_errorDuringBilling">An external error happened during billing.</string>
+    
+    <string name="ibs_error_billing_transactionCancelled">Upgrade canceled</string>
+    
+    <string name="ibs_error_billing_doesNotSupportSubscriptions">Sorry, your device does not support subscriptions.</string>
+    <string name="ibs_error_billing_cannotIntialize">Cannot initalize billing.\nTry updating Google Play Services and try again.</string>
+    
+    <string name="ibs_error_billing_priceUnknown">Price: $ ?</string>
+    <string name="ibs_error_billing_developerError">Billing Error: Setup problems.\nContact the developer</string>
+    <string name="ibs_error_billing_itemUnavailable">Billing Error: Missing item.\nContact the developer</string>
+    
+    <!-- Auto built strings get added here -->
+    <eat-comment />
+
+
+</resources>

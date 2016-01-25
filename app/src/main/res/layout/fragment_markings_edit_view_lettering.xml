@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" >
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	     >
+	    
+	    
+	    
+	    <EditText
+	        android:id="@+id/ibs_markings_customMarkings_input_name"
+	        style="@style/WhiteEditText"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:hint="@string/ibs_hint_customMarking"
+	        android:inputType="text" 
+	        
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignTop="@+id/ibs_markings_customMarkings_button_save"
+	        android:layout_toLeftOf="@+id/ibs_markings_customMarkings_button_save"
+	        android:layout_marginRight="10dp"
+	        
+	        android:layout_marginTop="-10dp"
+	        
+	         />
+	    
+	   
+	    
+	    <ImageButton
+		    android:id="@+id/ibs_markings_customMarkings_button_save"
+		    
+		    android:src="@drawable/ic_save"
+		    android:background="@drawable/btn_generic_accent_background"
+		    style="@style/ProfileEditButtonStyle"
+		    android:contentDescription="@string/ibs_contentDescription_saveChanges"
+		    
+		    android:layout_alignTop="@+id/ibs_markings_customMarkings_button_delete"
+		    android:layout_toLeftOf="@+id/ibs_markings_customMarkings_button_delete"
+		    
+		     />
+	    <ImageButton
+		    android:id="@+id/ibs_markings_customMarkings_button_delete"
+		    	    
+		    android:src="@drawable/ic_delete"
+		    android:background="@drawable/btn_generic_accent_background"
+		    style="@style/ProfileEditButtonStyle"
+		    android:contentDescription="@string/ibs_contentDescription_deleteMarking"
+		    
+		    android:layout_alignParentRight="true"
+		    android:layout_alignParentTop="true"
+		     />
+	
+	    
+	     <TextView
+		            android:id="@+id/ibs_markings_customMarkings_sortby_title"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="@string/ibs_label_library"
+		            style="@style/SubText" 
+		            android:gravity="left|center_vertical"
+		            android:layout_below="@+id/ibs_markings_customMarkings_input_name"
+		            
+		            />
+			
+			 <android.support.v7.widget.RecyclerView
+		        android:id="@+id/ibs_markings_customMarkings_createMarking_recyclerView"
+		        android:layout_width="match_parent"
+		        android:layout_height="@dimen/ibs_horizontal_lettering_list_height"
+		        android:scrollbars="none"
+		        
+		        android:layout_below="@+id/ibs_markings_customMarkings_sortby_title"
+		         />
+	
+	      <TextView
+	        android:id="@+id/ibs_markings_customMarkings_label"
+	        style="@style/SubText"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/ibs_label_markingsToApply" 
+	        android:layout_below="@+id/ibs_markings_customMarkings_createMarking_recyclerView"
+	        />
+	      
+	      <com.inductivebiblestudyapp.ui.widget.ExpandableHeightGridView
+		        android:id="@+id/ibs_markings_customMarkings_gridview_buttons"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		    	
+		    	android:numColumns="auto_fit"
+		    	android:columnWidth="@dimen/min_touch_size"
+		    	android:isScrollContainer="false"
+		    	android:choiceMode="multipleChoice"
+		    	
+		    	android:fadingEdge="none"
+		    	android:layout_below="@+id/ibs_markings_customMarkings_label"
+		        />
+	    
+	</RelativeLayout>
+</ScrollView>

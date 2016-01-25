@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <AutoCompleteTextView
+		    android:id="@+id/ibs_studyNotes_definition_autocomplete_search"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:ems="10"
+		    style="@style/SearchViewDefault" 
+		    
+		    />
+    
+      <TextView
+          android:id="@+id/ibs_notes_defintion_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ibs_label_definition" 
+        style="@style/SubHeading"
+        android:gravity="left"
+        />
+      
+      <View 
+	          android:layout_width="match_parent"
+        	android:layout_height="1dp"
+        	android:background="@drawable/list_divider"
+           />
+      
+      <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ibs_studyNotes_definition_listview" 
+        android:dividerHeight="0dp"
+		android:divider="@null"
+		
+        />
+
+    
+</LinearLayout>

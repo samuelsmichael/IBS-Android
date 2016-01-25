@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:divider="@null"
+    android:gravity="center"
+    android:layout_marginLeft="@dimen/ibs_bible_verseDetails_item_marginLeft"
+    android:orientation="horizontal"
+    
+    android:descendantFocusability="blocksDescendants"
+     >
+
+		<TextView
+		    android:id="@+id/list_item_verseDetails_strongs_word"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:text=""
+		    android:lines="2"
+		    android:lineSpacingMultiplier="1.25"
+		    style="@style/SubText" 
+		    android:layout_weight="3.0"
+		    
+		    />
+		
+		<TextView
+		    android:id="@+id/list_item_verseDetails_strongs_numbers"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:text=""
+		    android:lines="2"
+		    android:lineSpacingMultiplier="1.25"
+		    style="@style/SubText" 
+		    android:layout_weight="4.0"
+		    
+		    />
+    
+</LinearLayout>

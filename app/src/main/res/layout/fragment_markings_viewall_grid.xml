@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+   <!--  <android.widget.SearchView
+        android:id="@+id/ibs_custom_markings_summary_searchview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"  
+        style="@style/SearchViewDefault"
+        /> -->
+        
+        	<!-- Easier to style -->
+		<AutoCompleteTextView
+		    android:id="@+id/ibs_custom_markings_summary_autocomplete_search"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:ems="10"
+		    style="@style/SearchViewDefault" />
+
+    
+        <Button
+            android:id="@+id/ibs_button_viewall_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/CreateNewButtonStyle"
+            
+            android:gravity="left|center_vertical"
+            />
+    
+    <GridView
+        android:id="@+id/ibs_custom_markings_viewall_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+    	android:layout_weight="1.0"
+    	style="@style/GridAutoFit"
+        />
+
+    
+</LinearLayout>

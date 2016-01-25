@@ -1,0 +1,84 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:paddingBottom="@dimen/min_item_margin"
+    android:paddingLeft="@dimen/min_item_margin"
+    android:paddingRight="@dimen/min_item_margin"
+    android:paddingTop="@dimen/min_item_margin"
+    tools:context="com.inductivebiblestudyapp.ui.UpgradeActivity$PlaceholderFragment" 
+			        >
+			        
+    <ProgressBar
+	             android:id="@+id/ibs_progress_bar_loading"
+	             style="TextLoadingProgressBar"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:layout_gravity="center" 
+	             android:visibility="gone" />
+	<LinearLayout
+	    android:id="@+id/ibs_upgrade_container"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    
+	    android:gravity="center_horizontal"
+		    android:orientation="vertical" 
+		    android:visibility="gone"
+		    >
+		    
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/ibs_title_upgradeYourAccount" 
+	        style="@style/TitleText.Large"
+	        android:layout_marginTop="@dimen/min_item_margin"
+	        />
+		   
+	    <TextView
+	        	android:id="@+id/ibs_upgrade_package_info"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="" 
+		        style="@style/DescriptiveText"
+		        android:layout_marginTop="@dimen/min_item_margin"
+		        android:minHeight="100dp"
+		        android:gravity="center"
+		        />
+	    
+	    <LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:layout_weight="1.0"
+		    android:gravity="bottom|right" >
+	    
+		    <TextView
+		        	android:id="@+id/ibs_upgrade_text_price"
+			        android:layout_width="wrap_content"
+			        android:layout_height="match_parent"
+			        android:minHeight="50dp"
+			        android:layout_marginRight="@dimen/activity_horizontal_margin"
+			        android:text="@string/ibs_text_loading" 
+			        style="@style/PriceText"
+			        android:gravity="left|center_vertical"
+			        android:layout_marginTop="@dimen/min_item_margin"
+			        
+			        />
+		    
+		    	<Button
+			        android:id="@+id/ibs_button_upgrade"
+			        android:layout_width="wrap_content"
+			        android:layout_height="@dimen/ibs_button_height"
+			        android:minWidth="200dp"
+			        android:text="@string/ibs_button_upgrade" 
+			        android:layout_marginTop="@dimen/min_item_margin"
+			        android:layout_marginBottom="@dimen/min_item_margin"
+			        android:textAppearance="?android:attr/textAppearanceMedium"
+			        android:theme="@style/SpecialButtonStyle"
+			        
+			        />
+	    	</LinearLayout>
+	
+	</LinearLayout>
+</FrameLayout>

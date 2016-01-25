@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+
+	<!-- Easier to style -->
+	
+	
+		<com.inductivebiblestudyapp.ui.widget.ClearableEditText
+		    android:id="@+id/ibs_custom_markings_summary_search_input"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:ems="10"
+		    style="@style/SearchViewDefault" />
+
+		<include layout="@layout/viewstub_sortby_name_recent"          	     
+  			android:id="@+id/ibs_custom_markings_summary_sortby_container"
+       		android:layout_width="300dp"
+  			android:layout_height="wrap_content"
+  			android:visibility="gone"               
+       />
+	   
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        >
+	
+	        
+	         <com.inductivebiblestudyapp.ui.widget.ExpandableHeightGridView
+	        android:id="@+id/ibs_custom_markings_summary_gridview_letterformat"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1.0"
+	    	
+	    	style="@style/GridAutoFit"
+	    	android:isScrollContainer="false"
+	    	android:numColumns="4"
+	    	
+	    	android:fadingEdge="none"
+	        />
+	         
+	          <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        >
+	        <Button
+	            android:id="@+id/ibs_button_customMarking_create_letterformat"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            
+	            style="@style/CreateNewButtonStyle"
+	            />
+	
+	        <Button
+	            android:id="@+id/ibs_button_customMarking_viewAll_letterformat"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/ibs_button_viewAll"
+	            android:theme="@style/GrayButtonStyle"
+	            
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	             />
+	        </LinearLayout>
+	    </LinearLayout>
+	    
+	    <!-- Nice little diver to split the page -->
+	    
+	        <View android:layout_width="match_parent"
+	            android:layout_height="1dp"
+	            android:layout_marginTop="@dimen/activity_vertical_margin"
+	            android:layout_marginBottom="@dimen/activity_vertical_margin"
+	            android:background="@drawable/list_divider" />
+	    
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        >
+	        
+	        
+	     <com.inductivebiblestudyapp.ui.widget.ExpandableHeightGridView
+	        android:id="@+id/ibs_custom_markings_summary_gridview_images"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        
+	        android:layout_weight="1.0"
+	        android:numColumns="4"
+	        android:isScrollContainer="false"
+	        style="@style/GridAutoFit"
+	        
+	        android:layout_alignParentLeft="true"
+	    	android:layout_toRightOf="@+id/ibs_button_customMarking_create_images"
+	    	android:fadingEdge="none"
+	        />
+	  <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        >
+	        <Button
+	            android:id="@+id/ibs_button_customMarking_create_images"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/ibs_button_create" 
+	            android:layout_alignParentRight="true"
+	            
+	            style="@style/CreateNewButtonStyle"
+	            />
+	
+	        <Button
+	            android:id="@+id/ibs_button_customMarking_viewAll_images"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/ibs_button_viewAll"
+	            android:theme="@style/GrayButtonStyle"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	             />
+	        </LinearLayout>
+	    </LinearLayout>
+	
+	</LinearLayout>
+</ScrollView>

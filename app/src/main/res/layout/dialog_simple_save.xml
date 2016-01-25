@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="@dimen/ibs_dialog_save_minWidth"
+    
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="5dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    >
+    <LinearLayout  
+        
+        	 android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:orientation="horizontal"	          
+	          
+	          android:layout_marginBottom="@dimen/activity_vertical_margin" 
+	          >
+		<TextView
+		    android:id="@+id/ibs_dialog_text_message"
+	          android:layout_width="0dp"
+	          android:layout_height="wrap_content"
+	          
+	          android:gravity="center"
+	          android:layout_gravity="center"
+	          android:text=""
+	          
+	          android:textAppearance="?android:attr/textAppearanceLarge"
+	          
+	          android:layout_weight="1.0"
+	          />
+		
+		 <ImageButton
+			    android:id="@+id/ibs_dialog_button_share"
+			    android:layout_width="@dimen/small_touch_size"
+			    android:layout_height="@dimen/small_touch_size"
+			    
+			    android:layout_marginLeft="@dimen/min_item_margin"
+			    android:src="@drawable/ic_share" 
+			    style="@style/ImageButtonStyle.NoBackground"
+			    
+			    android:contentDescription="@string/ibs_contentDescription_share"			    
+	   
+	   			/>
+		  
+ 	       <ImageButton
+		    android:id="@+id/ibs_dialog_button_delete"
+		    android:layout_width="@dimen/small_touch_size"
+		    android:layout_height="@dimen/small_touch_size"
+		    
+		    android:layout_marginLeft="@dimen/min_item_margin"
+		    android:scaleType="centerInside"
+		    android:src="@drawable/ic_delete" 
+		    style="@style/ImageButtonStyle.NoBackground"
+		    android:contentDescription="@string/ibs_contentDescription_delete"
+		    
+		    android:visibility="visible"
+    
+   			 />
+	</LinearLayout>
+	
+
+	 <EditText
+        android:id="@+id/ibs_dialog_input"
+        style="@style/WhiteEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:maxLines="3"
+        android:hint="@string/ibs_hint_enterYourText"
+        android:inputType="textMultiLine" 
+        android:layout_weight="1.0"
+        />
+		 
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+	    >
+	
+	    <Button
+	            android:id="@+id/ibs_dialog_button_negative"
+	            android:layout_width="match_parent"
+	            android:layout_height="@dimen/ibs_button_height"
+	            
+	            android:text="@string/ibs_button_cancel"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/textColorPrimary" 
+	            android:theme="@style/GrayButtonStyle"
+	            android:layout_weight="1.0"
+	            />
+	        <Button
+	            android:id="@+id/ibs_dialog_button_positive"
+	            android:layout_width="match_parent"
+	            android:layout_height="@dimen/ibs_button_height"
+	            
+	            android:text="@string/ibs_button_save"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/textColorPrimary" 
+	            android:layout_weight="1.0"
+	            />
+	        
+	        
+	</LinearLayout>
+</LinearLayout>

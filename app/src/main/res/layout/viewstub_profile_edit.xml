@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+	<ImageView
+	    android:id="@+id/ibs_profile_edit_img"
+	    style="@style/ProfileImage"
+	    android:src="@null" 
+	    android:contentDescription="@string/ibs_contentDescription_profilePicture"
+	    
+	    android:background="@drawable/btn_generic_accent_background"
+	    android:layout_marginBottom="5dp"
+	    />
+	
+		<ProgressBar
+	    android:id="@+id/ibs_profile_edit_img_progessBar"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignTop="@+id/ibs_profile_edit_img"
+	    android:layout_alignBottom="@+id/ibs_profile_edit_img"
+	    android:layout_alignRight="@+id/ibs_profile_edit_img"
+	    android:layout_alignLeft="@+id/ibs_profile_edit_img"
+	    
+	    android:padding="30dp"
+	    android:visibility="gone"
+	     />
+
+	<ImageButton
+	    android:id="@+id/ibs_profile_edit_button_save"
+	    
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:src="@drawable/ic_save"
+	    android:background="@drawable/btn_generic_accent_background"
+	    style="@style/ProfileEditButtonStyle"
+	    android:contentDescription="@string/ibs_contentDescription_saveChanges"
+	     />
+	<ImageButton
+	    android:id="@+id/ibs_profile_edit_button_cancel"
+	    android:layout_alignParentRight="true"
+	    android:layout_below="@+id/ibs_profile_edit_button_save"
+	    android:src="@drawable/ic_cancel"
+	    android:background="@drawable/btn_generic_accent_background"
+	    style="@style/ProfileEditButtonStyle"
+	    android:contentDescription="@string/ibs_contentDescription_cancelChanges"
+	     />
+	
+	<!-- Note: We use negative margins as default styles cause a lot of spacing. -->
+	
+	<EditText
+        android:id="@+id/ibs_profile_edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" 
+        
+	    android:layout_marginLeft="@dimen/min_item_margin"
+	    android:layout_toRightOf="@+id/ibs_profile_edit_img"
+	    android:layout_toLeftOf="@+id/ibs_profile_edit_button_save"
+	    android:layout_above="@+id/ibs_profile_edit_email"
+	    
+	    android:text="@string/ibs_fake_name"
+	    android:layout_marginTop="-10dp"
+        android:hint="@string/ibs_hint_name"
+        style="@style/WhiteEditText"
+        />
+	
+	<EditText
+        android:id="@+id/ibs_profile_edit_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress" 
+        
+	    android:layout_alignLeft="@+id/ibs_profile_edit_name"
+	    android:layout_alignRight="@+id/ibs_profile_edit_name"
+	    android:layout_above="@+id/ibs_profile_edit_address1"
+	    
+	    android:layout_toLeftOf="@+id/ibs_profile_edit_button_save"
+	    android:text="@string/ibs_fake_email"
+	    android:layout_marginTop="-10dp"
+        android:hint="@string/ibs_hint_email"
+        style="@style/WhiteEditText"
+        />
+
+	
+	<EditText
+        android:id="@+id/ibs_profile_edit_address1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPostalAddress" 
+        
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignRight="@+id/ibs_profile_edit_name"
+	    android:layout_below="@+id/ibs_profile_edit_img"
+	    
+	    android:text="@string/ibs_fake_address_line1"
+	    
+	    android:layout_marginTop="-10dp"
+	    
+        android:hint="@string/ibs_hint_address_line1"
+        style="@style/WhiteEditText"
+        />
+	
+	<EditText
+        android:id="@+id/ibs_profile_edit_address2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPostalAddress" 
+        
+        android:layout_marginTop="-10dp"
+        
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignRight="@+id/ibs_profile_edit_name"
+	    android:layout_below="@+id/ibs_profile_edit_address1"
+	    
+	    android:text="@string/ibs_fake_address_line2"
+	    
+        android:hint="@string/ibs_hint_address_line2"
+        style="@style/WhiteEditText"
+        />
+	
+	<TextView
+	    android:id="@+id/ibs_profile_edit_about_subheading"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    
+	    
+	    
+	    android:layout_below="@+id/ibs_profile_edit_address2"
+	    
+	    android:text="@string/ibs_label_about"
+	    style="@style/SubText" />
+	
+	<EditText
+        android:id="@+id/ibs_profile_edit_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine" 
+        android:gravity="top"
+        android:lines="7"
+        
+        android:layout_marginTop="-10dp"
+        
+	    android:layout_below="@+id/ibs_profile_edit_about_subheading"
+	    
+	    android:text="@string/ibs_lorem_ipsum_long"
+	    
+        android:hint="@string/ibs_hint_about"
+        style="@style/WhiteEditText"
+        />
+	
+	<TextView
+	        android:id="@+id/ibs_profile_edit_setTranslations"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/ibs_label_translationsSet" 
+	        style="@style/SubText"
+	        android:gravity="left"
+	        android:layout_marginTop="@dimen/min_item_margin"
+	        
+	        android:layout_below="@+id/ibs_profile_edit_about"
+	        />
+	    
+      <RadioGroup
+    	        android:id="@+id/ibs_profile_edit_radiogroup_translations"
+    	        android:layout_width="match_parent"
+    	        android:layout_height="wrap_content"
+    	          android:layout_marginLeft="@dimen/ibs_subcheckbox_margin_horizontal"
+    	          
+    	          android:layout_below="@+id/ibs_profile_edit_setTranslations"
+    	        />
+      
+      	<TextView
+	        android:id="@+id/ibs_profile_edit_changePassword"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/ibs_label_changePassword" 
+	        android:layout_below="@+id/ibs_profile_edit_radiogroup_translations"
+	        style="@style/SubText"
+	        android:gravity="left"
+	        android:layout_marginTop="@dimen/min_item_margin"
+	        
+	        android:visibility="gone"
+	        />
+      
+       <EditText
+            android:id="@+id/ibs_profile_edit_password1"
+            android:layout_below="@+id/ibs_profile_edit_changePassword"
+            style="@style/WhiteEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/ibs_hint_password_unchanged"
+            android:inputType="textPassword" 
+            android:visibility="gone"
+            />
+
+	   	<EditText
+            android:id="@+id/ibs_profile_edit_password2"
+            android:layout_below="@+id/ibs_profile_edit_password1"
+            style="@style/WhiteEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/ibs_hint_password_repeat"
+            android:inputType="textPassword" 
+            android:visibility="gone"
+            />
+
+</RelativeLayout>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    
+    >
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:padding="8dp"
+        >
+        
+        <com.inductivebiblestudyapp.ui.widget.ClearableEditText
+		    android:id="@+id/ibs_dialog_biblesearch_input"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    
+		    
+		    android:ems="10"
+		    style="@style/SearchViewDefault" 
+		    
+       	    android:paddingBottom="@dimen/ibs_bible_search_item_verticalPadding"
+		    
+		    />
+        
+
+			<TextView
+        		    android:id="@+id/ibs_dialog_biblesearch_text_narrowBy"
+        		    android:layout_width="match_parent"
+        		    android:layout_height="wrap_content"
+        		    android:text="@string/ibs_label_bibleSearch_narrowBy" 
+        		    style="@style/SubHeading"        		    
+        		    />
+        	<LinearLayout
+        	    android:id="@+id/ibs_dialog_biblesearch_container_book"
+        	    android:layout_width="match_parent"
+        	    android:layout_height="wrap_content" 
+        	    android:orientation="horizontal"
+        	    android:gravity="center"
+        	    
+        	    android:paddingTop="@dimen/ibs_bible_search_item_verticalPadding"
+        	    android:paddingBottom="@dimen/ibs_bible_search_item_verticalPadding"
+        	    >
+
+        		<TextView
+        		    android:id="@+id/ibs_dialog_biblesearch_label_book"
+        		    android:layout_width="0dp"
+        		    android:layout_height="wrap_content"
+        		    android:text="@string/ibs_label_bibleSearch_books" 
+        		    android:layout_weight="1.0"
+        		    style="@style/SubHeading"
+        		    />
+        	    
+	        	<Spinner
+				    android:id="@+id/ibs_dialog_biblesearch_select_book"
+				    android:layout_width="0dp"			    
+				    android:layout_height="wrap_content"
+				    
+				    android:labelFor="@+id/ibs_dialog_biblesearch_label_book"
+				    
+				    android:layout_weight="1.0" />
+        	
+        	</LinearLayout>
+        	
+        	<LinearLayout
+        	    android:id="@+id/ibs_dialog_biblesearch_container_chapter"
+        	    android:layout_width="match_parent"
+        	    android:layout_height="wrap_content" 
+        	    android:orientation="horizontal"
+        	    android:gravity="center"
+        	    
+        	    
+        	    android:paddingTop="@dimen/ibs_bible_search_item_verticalPadding"
+        	    android:paddingBottom="@dimen/ibs_bible_search_item_verticalPadding"
+        	    >
+
+        		<TextView
+        		    android:id="@+id/ibs_dialog_biblesearch_label_chapter"
+        		    android:layout_width="0dp"
+        		    android:layout_height="wrap_content"
+        		    android:text="@string/ibs_label_bibleSearch_chapters" 
+        		    android:layout_weight="1.0"
+        		    style="@style/SubHeading"
+        		    />
+        	    
+	        	<Spinner
+				    android:id="@+id/ibs_dialog_biblesearch_select_chapter"
+				    android:layout_width="0dp"			    
+				    android:layout_height="wrap_content"
+				    
+				    android:labelFor="@+id/ibs_dialog_biblesearch_label_chapter"
+				    
+				    android:layout_weight="1.0" />
+        	
+        	</LinearLayout>
+        	
+        	<RelativeLayout
+        	    android:id="@+id/ibs_dialog_biblesearch_container_verseRange"
+        	    android:layout_width="match_parent"
+        	    android:layout_height="wrap_content" 
+        	    
+        	    
+        	    android:paddingTop="@dimen/ibs_bible_search_item_verticalPadding"
+        	    android:paddingBottom="@dimen/ibs_bible_search_item_verticalPadding"
+        	    >
+	        	
+        	    <View 
+        	        android:id="@+id/ibs_dialog_biblesearch_dummy_center"
+        	        android:layout_height="1px"
+        	        android:layout_width="1px"
+        	        android:layout_centerInParent="true"        	        
+        	        />
+
+        		<TextView
+        		    android:id="@+id/ibs_dialog_biblesearch_label_verseStart"
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:text="@string/ibs_label_bibleSearch_verseStart" 
+        		    android:gravity="center_vertical"
+        		    style="@style/SubHeading"
+        		    android:layout_alignParentLeft="true"
+        		    android:layout_alignRight="@+id/ibs_dialog_biblesearch_dummy_center"
+        		    android:layout_alignTop="@+id/ibs_dialog_biblesearch_select_verseStart"
+        		    android:layout_alignBottom="@+id/ibs_dialog_biblesearch_select_verseStart"
+        		    />
+        	    
+	        	<Spinner
+				    android:id="@+id/ibs_dialog_biblesearch_select_verseStart"
+				    android:layout_width="wrap_content"			    
+				    android:layout_height="wrap_content"
+				    
+				    android:labelFor="@+id/ibs_dialog_biblesearch_label_verseRange"
+				    
+				    android:layout_alignParentRight="true"
+        		    android:layout_alignLeft="@+id/ibs_dialog_biblesearch_dummy_center"
+        		     />
+
+	        	<TextView
+        		    android:id="@+id/ibs_dialog_biblesearch_label_verseEnd"
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:text="@string/ibs_label_bibleSearch_verseEnd" 
+        		    
+        		    android:gravity="center_vertical"
+        		    
+        		    style="@style/SubHeading"
+        		    android:layout_alignParentLeft="true"
+        		    android:layout_alignRight="@+id/ibs_dialog_biblesearch_dummy_center"
+        		    android:layout_alignTop="@+id/ibs_dialog_biblesearch_select_verseEnd"
+        		    android:layout_alignBottom="@+id/ibs_dialog_biblesearch_select_verseEnd"
+        		    />
+	        	
+	        	<Spinner
+				    android:id="@+id/ibs_dialog_biblesearch_select_verseEnd"
+				    android:layout_width="wrap_content"			    
+				    android:layout_height="wrap_content"
+				    
+				    android:labelFor="@+id/ibs_dialog_biblesearch_label_verseRange"
+				    
+				    android:layout_alignParentRight="true"
+        		    android:layout_alignLeft="@+id/ibs_dialog_biblesearch_dummy_center" 
+        		    android:layout_below="@+id/ibs_dialog_biblesearch_select_verseStart"
+        	    	android:layout_marginTop="@dimen/ibs_bible_search_item_verticalPadding" />
+        	
+        	</RelativeLayout>
+        	
+        	<TextView
+	        	    android:id="@+id/ibs_dialog_biblesearch_text_status"
+	        	    android:layout_width="match_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:gravity="center"
+	        	    android:text="@string/ibs_text_loading"
+	        	    style="@style/DescriptiveText"         	    
+	        	    
+	        	    android:paddingTop="@dimen/ibs_bible_search_item_verticalPadding"
+	        	    android:paddingBottom="@dimen/ibs_bible_search_item_verticalPadding"
+	        	    />
+        	
+        	<LinearLayout 
+		    android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal"
+		    >
+		
+		    <Button
+		            android:id="@+id/ibs_dialog_button_negative"
+		            android:layout_width="match_parent"
+		            android:layout_height="@dimen/ibs_button_height"
+		            
+		            android:text="@string/ibs_button_cancel"
+		            android:textAppearance="?android:attr/textAppearanceMedium"
+		            android:textColor="@color/textColorPrimary" 
+		            android:theme="@style/GrayButtonStyle"
+		            android:layout_weight="1.0"
+		            />
+		        <Button
+		            android:id="@+id/ibs_dialog_button_positive"
+		            android:layout_width="match_parent"
+		            android:layout_height="@dimen/ibs_button_height"
+		            
+		            android:text="@string/ibs_button_search"
+		            android:textAppearance="?android:attr/textAppearanceMedium"
+		            android:textColor="@color/textColorPrimary" 
+		            android:layout_weight="1.0"
+		            />
+		        
+		        
+		</LinearLayout>
+        
+    </LinearLayout>
+  
+</ScrollView>

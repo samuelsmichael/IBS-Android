@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+   <!--  <TextView
+        style="@style/TitleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ibs_title_addedit_image" /> -->
+
+
+    <LinearLayout
+         android:id="@+id/ibs_addedit_sortby_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/ibs_addedit_sortby_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ibs_label_library"
+            style="@style/SubText" 
+            
+            />
+
+         
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/ibs_addedit_image_library_recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ibs_horizontal_thumbnail_list_height"
+        android:scrollbars="none" />
+	 
+
+        <EditText
+        android:id="@+id/ibs_addedit_input_search_google_imags"
+        style="@style/WhiteEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/ibs_hint_search_google_images"
+        android:imeOptions="actionSearch"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/ibs_addedit_button_upload_from_gallery"
+        style="@style/SubText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_generic_accent_background"
+        android:drawableLeft="@drawable/ic_upload"
+        android:drawablePadding="20dp"        
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:text="@string/ibs_label_uploadFromGallery"
+        android:textAppearance="?android:textAppearanceMedium" />
+    
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:windowBackground="@null"
+    android:background="@null"  
+    >
+
+    <ImageView
+        android:id="@+id/dialog_tooltip_arrowUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:src="@drawable/dialog_tooltip_arrow_up" />
+    
+    <FrameLayout 
+		         android:layout_width="250dp"
+			     android:layout_height="wrap_content"
+			     
+	        android:background="@drawable/popup_background"
+			        >
+		
+	         <ProgressBar
+	             android:id="@+id/ibs_progress_bar_loading"
+	             style="TextLoadingProgressBar"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:layout_gravity="center"
+	             
+	             
+	              />
+	
+	    <FrameLayout
+	        android:id="@+id/dialog_tooltip_content"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        />
+    </FrameLayout>
+    
+    <ImageView
+        android:id="@+id/dialog_tooltip_arrowDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:src="@drawable/dialog_tooltip_arrow_down" />
+
+</LinearLayout>

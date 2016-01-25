@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+     
+	<TextView
+          android:id="@+id/ibs_bible_chapter_title"
+	        android:layout_width="@dimen/ibs_bible_chapterTitle_maxWidth"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	       android:layout_centerHorizontal="true" 
+	        
+	        style="@style/Heading"
+	        android:text=""
+	        android:gravity="center"
+	        
+	        android:layout_marginBottom="0dp"
+	        android:paddingBottom="0dp"
+	        
+        
+	        android:ellipsize="end"
+	        android:maxLines="2"
+	        android:scrollHorizontally="false"  	        
+          
+	        />
+	
+	 <ImageButton
+		    android:id="@+id/ibs_bible_chapter_button_previous_chapter"
+		    android:layout_width="@dimen/small_touch_size"
+		    android:layout_height="@dimen/small_touch_size"
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignParentTop="true"
+		    
+		    android:layout_margin="0dp"
+		    android:layout_marginLeft="0dp"
+		   	
+		    android:scaleType="centerInside"
+		    android:src="@drawable/ic_arrow_left" 
+		    style="@style/ImageButtonStyle.NoBackground"
+		    
+		    android:contentDescription="@string/ibs_contentDescription_previousChapter"
+    
+    		android:visibility="gone"
+   			 />
+	 
+	  <ImageButton
+		    android:id="@+id/ibs_bible_chapter_button_next_chapter"
+		    android:layout_width="@dimen/small_touch_size"
+		    android:layout_height="@dimen/small_touch_size"
+		    android:layout_alignParentRight="true"
+		    android:layout_alignParentTop="true"
+		    
+		    android:layout_margin="0dp"
+		    android:layout_marginLeft="0dp"
+		   	
+		    android:scaleType="centerInside"
+		    android:src="@drawable/ic_arrow_right" 
+		    style="@style/ImageButtonStyle.NoBackground"
+		    
+		    android:contentDescription="@string/ibs_contentDescription_nextChapter"
+    
+    		android:visibility="gone"
+   			 />
+     	      
+    
+    <LinearLayout
+       		android:id="@+id/ibs_bible_chapter_button_theme_container"
+	        android:layout_width="@dimen/ibs_bible_chapterTitle_maxWidth"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true" 
+       		
+	        android:layout_below="@+id/ibs_bible_chapter_title"
+	        
+	        android:layout_margin="0dp"
+	        android:padding="0dp"
+	        
+	        android:gravity="center"	        
+	        android:orientation="horizontal"     
+	        
+        >
+     	      
+     	      
+     	      <ImageButton
+		    android:id="@+id/ibs_bible_chapter_button_theme_edit"
+		    android:layout_width="@dimen/small_touch_size"
+		    android:layout_height="@dimen/small_touch_size"
+		    
+		    
+		    android:layout_margin="0dp"
+		    android:layout_marginLeft="0dp"
+		    android:layout_marginRight="@dimen/min_item_margin"
+		   	
+		   	android:paddingTop="@dimen/ibs_bible_chapter_buttonPadding"
+		   	android:paddingBottom="@dimen/ibs_bible_chapter_buttonPadding"
+		   	android:paddingRight="@dimen/ibs_bible_chapter_buttonPadding"
+		   	android:paddingLeft="@dimen/ibs_bible_chapter_buttonPadding"
+		    android:scaleType="centerInside"
+		    android:src="@drawable/ic_edit" 
+		    style="@style/ImageButtonStyle.NoBackground"
+		    
+		    android:contentDescription="@string/ibs_contentDescription_editTheme"
+    
+   			 />
+     	      
+     	      <ImageButton
+			    android:id="@+id/ibs_bible_chapter_button_share"
+			    android:layout_width="@dimen/small_touch_size"
+			    android:layout_height="@dimen/small_touch_size"
+			    
+			    android:paddingTop="@dimen/ibs_bible_chapter_buttonPadding"
+		   		android:paddingBottom="@dimen/ibs_bible_chapter_buttonPadding"
+		   		android:paddingRight="@dimen/ibs_bible_chapter_buttonPadding"
+		   		android:paddingLeft="@dimen/ibs_bible_chapter_buttonPadding"
+		   	
+			    android:layout_marginLeft="@dimen/min_item_margin"
+			    android:src="@drawable/ic_share" 
+			    style="@style/ImageButtonStyle.NoBackground"
+			    
+			    android:contentDescription="@string/ibs_contentDescription_shareTheme"
+    
+    			/>
+     	 
+ 	       
+ 	       <!-- Note: Image size in this button is determined by button padding; 
+ 	      if you adjust the height you NEED to adjust the padding. -->
+ 	      
+ 	       <ImageButton
+		    android:id="@+id/ibs_bible_chapter_button_theme_delete"
+		    android:layout_width="@dimen/small_touch_size"
+		    android:layout_height="@dimen/small_touch_size"
+		    
+		    
+		    android:layout_margin="0dp"
+		    android:layout_marginLeft="@dimen/min_item_margin"
+		    android:layout_marginRight="0dp"
+		   	
+		   	android:paddingTop="@dimen/ibs_bible_chapter_buttonPadding"
+		   	android:paddingBottom="@dimen/ibs_bible_chapter_buttonPadding"
+		   	android:paddingRight="@dimen/ibs_bible_chapter_buttonPadding"
+		   	android:paddingLeft="@dimen/ibs_bible_chapter_buttonPadding"
+		    android:scaleType="centerInside"
+		    android:src="@drawable/ic_delete" 
+		    style="@style/ImageButtonStyle.NoBackground"
+		    
+		    android:contentDescription="@string/ibs_contentDescription_deleteTheme"
+		    
+		    android:visibility="gone"
+    
+   			 />
+ 	       
+ 	 </LinearLayout>
+     	      
+    
+ 	     
+ 	      
+ 	    
+    
+    <!-- Gives the popup a moveable anchor to latch onto -->
+ 	<View android:layout_width="1px"
+ 	    android:layout_height="1px"
+ 	    android:id="@+id/ibs_bible_chapter_anchorview_hack" 
+ 	    android:layout_alignTop="@+id/ibs_bible_chapter_scrollview"
+ 	    />
+        
+    <ScrollView
+        android:id="@+id/ibs_bible_chapter_scrollview" 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"        
+		android:layout_below="@+id/ibs_bible_chapter_button_theme_container"
+		android:layout_alignParentBottom="true"
+		android:fillViewport="true"
+        >
+        
+	        <LinearLayout 
+	            android:layout_width="match_parent"
+		        android:layout_height="wrap_content" 
+		        android:layout_margin="0dp"
+		        android:padding="0dp"
+		        android:orientation="vertical"
+	            >
+	            <FrameLayout
+	                android:id="@+id/ibs_bible_chapter_verses_container"
+	                android:layout_width="match_parent"
+		        	android:layout_height="0dp" 
+		        	android:layout_margin="0dp"
+		        	android:padding="0dp"
+		        	android:layout_weight="1.0"
+	                >
+			         <TextView
+				        android:id="@+id/ibs_bible_chapter_verses"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content" 
+				        android:text="@string/ibs_text_loading"
+				        android:textIsSelectable="true"
+			        	
+				        style="@style/BibleVerseText"				        
+				        />
+		         </FrameLayout>
+		         <TextView		            
+			        android:id="@+id/ibs_bible_chapter_copyright"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content" 
+			        android:text=""			        			        
+			        style="@style/CopyrightText"
+			        android:paddingTop="5dp"
+			        android:paddingBottom="5dp"
+			        />
+	         </LinearLayout>
+        </ScrollView>
+    
+
+</RelativeLayout>
+
+
+

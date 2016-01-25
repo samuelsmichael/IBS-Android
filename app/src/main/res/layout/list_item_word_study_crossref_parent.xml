@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/btn_generic_accent_background_nocheck"
+    
+     >
+	<CheckBox 
+	    android:id="@+id/list_item_wordStudyCrossRef_parent_checkbox"
+	    android:layout_width="0dp"
+	    android:layout_height="wrap_content"
+	    android:minHeight="?android:attr/listPreferredItemHeight" 
+	    
+	    android:drawablePadding="20dp"
+	    android:paddingLeft="5dp"
+	    android:paddingRight="5dp"
+	    android:drawableLeft="@drawable/checkbox_hide_show"
+	    android:background="@drawable/btn_generic_accent_background_nocheck"
+	  
+		android:text=""
+		android:button="@null"
+		android:checked="false"
+		
+		android:gravity="center_vertical"
+		android:maxLines="2"
+		android:ellipsize="end"
+		style="@style/SubHeading"
+		
+		android:selectAllOnFocus="false"
+		android:layout_weight="1.0"
+		android:clickable="false"
+	  />
+	
+	  <!-- We define show as true, hide as false -->
+	
+	<TextView
+	    android:id="@+id/list_item_wordStudyCrossRef_parent_message"
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:text="@string/ibs_text_loading"
+	    style="@style/SubText" 
+	    android:gravity="center"
+	    />
+	
+	
+	<ProgressBar
+	    android:id="@+id/list_item_wordStudyCrossRef_parent_progess"
+	    style="?android:attr/progressBarStyleSmall"
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent" 
+	    android:gravity="center"
+	    />
+
+  
+</LinearLayout>

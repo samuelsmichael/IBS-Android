@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	     >
+
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:gravity="center"
+	     >
+
+        
+    <TextView
+        android:id="@+id/ibs_studyNotes_text_search_summary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="" 
+        style="@style/SubHeading"
+        android:gravity="center"
+        
+        android:layout_weight="1.0"
+        android:layout_marginRight="@dimen/min_item_margin"
+        />
+	       
+	    <com.inductivebiblestudyapp.ui.widget.ClearableEditText
+			    android:id="@+id/ibs_studyNotes_edittext_search"
+			    android:layout_width="0dp"
+			    android:layout_height="wrap_content"
+			    android:ems="10"
+			    style="@style/SearchViewDefault" 
+			    android:layout_weight="1.3"
+			    />
+	    
+	     <TextView
+	            android:id="@+id/ibs_studyNotes_text_filter"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"	            
+	            android:minHeight="@dimen/small_touch_size"
+	            android:minWidth="@dimen/small_touch_size"
+	            android:gravity="center_vertical"
+	            android:drawableRight="@drawable/ic_filter_icon" 
+	            android:drawablePadding="3dp"
+	            
+	            android:background="@drawable/btn_generic_accent_background"
+	            android:text="@string/ibs_button_filterNotes"
+	            android:contentDescription="@string/ibs_contentDescription_filterNotes"
+	            style="@style/SubText"
+	            android:clickable="true"
+	            />
+	        
+    </LinearLayout>
+    
+    	     
+	    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	     >
+
+
+	    <TextView
+	        android:id="@+id/ibs_studyNotes_sortBy_book"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:text="@string/ibs_label_book" 
+	        style="@style/SubHeading"
+	        android:gravity="left|center_horizontal"
+	        android:layout_weight="1.0"
+	        android:background="@drawable/btn_generic_accent_background"
+	        android:drawableRight="@drawable/ic_arrow_down"
+	        android:clickable="true"
+	        android:ellipsize="marquee"
+	        android:lines="1"
+	        android:singleLine="true"
+	        />
+	    
+	    <TextView
+	         android:id="@+id/ibs_studyNotes_sortBy_chapter"
+	        android:layout_width="@dimen/ibs_notes_chapter_width"
+	        android:layout_height="wrap_content"
+	        android:paddingRight="@dimen/ibs_notes_arrow_size"
+	        android:drawablePadding="@dimen/ibs_notes_arrow_size"
+	        android:text="@string/ibs_label_chapter" 
+	        style="@style/SubHeading"
+	        android:gravity="center"
+	        android:background="@drawable/btn_generic_accent_background"
+	        android:drawableRight="@drawable/ic_arrow_down"
+	        android:clickable="true"
+	        android:ellipsize="marquee"
+	        android:lines="1"
+	        android:singleLine="true"
+	        />
+	    
+	    <TextView
+	         android:id="@+id/ibs_studyNotes_sortBy_verse"
+	        android:layout_width="@dimen/ibs_notes_verse_width"
+	        android:layout_height="wrap_content"
+	        android:paddingRight="@dimen/ibs_notes_arrow_size"
+	        android:drawablePadding="@dimen/ibs_notes_arrow_size"
+	        android:text="@string/ibs_label_verse" 
+	        style="@style/SubHeading"
+	        android:drawableRight="@drawable/ic_arrow_down"
+	        android:gravity="center"
+	        android:background="@drawable/btn_generic_accent_background"
+	        android:clickable="true"
+	        android:ellipsize="marquee"
+	        android:lines="1"
+	        android:singleLine="true"
+	        />
+    
+    </LinearLayout>
+    
+        <View android:layout_width="match_parent"
+	            android:layout_height="1dp"
+	            android:layout_marginTop="@dimen/fragment_tab_vertical_margin"
+	            android:layout_marginBottom="@dimen/fragment_tab_vertical_margin"
+	            android:background="@drawable/list_divider" />
+        
+   <android.support.v7.widget.RecyclerView
+        android:id="@+id/ibs_studyNotes_recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+         />
+
+    
+</LinearLayout>
+

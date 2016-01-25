@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:windowBackground="@null"
+    android:background="@null"  
+    >
+
+    <ImageView
+        android:id="@+id/dialog_tooltip_arrowUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:src="@drawable/dialog_tooltip_arrow_up_dark" />
+    
+    
+    <ScrollView 
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        
+        >
+    <LinearLayout
+    	
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        
+        android:orientation="vertical"
+        
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        
+        android:background="@drawable/popup_background_dark"
+        
+        
+        >
+        
+       
+        
+        <TextView
+    	android:id="@+id/dialog_customMarking_tooltip_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:text="@string/ibs_title_customMarkings"
+        
+        android:gravity="left"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        
+        /> 
+         <View
+            android:layout_width="match_parent" 
+            android:layout_height="1dp"
+            
+        	android:background="@drawable/list_divider"
+        	
+            />
+         
+        <Button
+    	android:id="@+id/dialog_customMarking_tooltip_button_existing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_generic_accent_background"
+        android:text="@string/ibs_label_useExistingMarking"
+        style="@style/SubText"
+        android:gravity="left|center_vertical"
+        
+        />
+        
+         <View
+            android:layout_width="match_parent" 
+            android:layout_height="1dp"
+            
+        	android:background="@drawable/list_divider"
+        	
+            />
+         
+         
+                 
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            android:id="@+id/dialog_customMarking_tooltip_existing_container"
+            android:visibility="gone"
+            >
+        
+            
+           <include layout="@layout/viewstub_sortby_name_recent"
+	   			android:id="@+id/dialog_customMarking_tooltip_sortby_container"
+	        	android:layout_width="match_parent"
+    			android:layout_height="wrap_content"	             
+	        />
+	
+                    
+       <android.support.v7.widget.RecyclerView
+	        android:id="@+id/dialog_customMarking_tooltip_image_library_recyclerView"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/ibs_horizontal_thumbnail_list_height"
+	        android:scrollbars="none" 
+	        
+	        />
+                          
+	   
+        <android.support.v7.widget.RecyclerView
+            
+	        android:id="@+id/dialog_customMarking_tooltip_lettering_library_recyclerView"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/ibs_horizontal_lettering_list_height"
+	        android:scrollbars="none" />
+	    
+
+      
+	
+         <View
+            android:layout_width="match_parent" 
+            android:layout_height="1dp"
+            
+        	android:background="@drawable/list_divider"
+        	
+            />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/dialog_customMarking_tooltip_button_create"
+            style="@style/SubText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_generic_accent_background"
+            android:gravity="left|center_vertical"
+            android:text="@string/ibs_title_createNewMarking" />
+                  
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:id="@+id/dialog_customMarking_tooltip_create_container"
+            android:visibility="gone"
+            >
+        
+       <Button
+	            android:id="@+id/dialog_customMarking_button_create_image"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            
+	            android:text="@string/ibs_button_newImage"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/textColorPrimary" 
+	            android:theme="@style/GrayButtonStyle"
+	            android:layout_weight="1.0"
+	            />
+       <Button
+	            android:id="@+id/dialog_customMarking_button_create_lettering"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            
+	            android:text="@string/ibs_button_newLettering"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/textColorPrimary" 
+	            android:theme="@style/GrayButtonStyle"
+	            android:layout_weight="1.0"
+	            />
+
+        </LinearLayout>
+        
+       
+
+         
+        	
+        </LinearLayout>    
+        </ScrollView>
+    <ImageView
+        android:id="@+id/dialog_tooltip_arrowDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:src="@drawable/dialog_tooltip_arrow_down_dark" />
+
+</LinearLayout>

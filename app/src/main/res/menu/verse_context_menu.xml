@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.inductivebiblestudyapp.MainActivity" >
+
+     <item
+        android:id="@+id/verse_defintion"
+        android:visible="true"
+        android:title="@string/ibs_label_definition"
+        />
+     
+       <item
+        android:id="@+id/verse_cross_references"
+        android:visible="true"
+        android:title="@string/ibs_label_crossReferences"
+        />
+   
+
+</menu>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+	<ImageView
+	    android:id="@+id/ibs_profile_display_img"
+	    style="@style/ProfileImage"
+	    android:src="@null" 
+	    android:contentDescription="@string/ibs_contentDescription_profilePicture"	    
+	    />
+	
+	
+	<ProgressBar
+	    android:id="@+id/ibs_profile_display_img_progessBar"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignTop="@+id/ibs_profile_display_img"
+	    android:layout_alignBottom="@+id/ibs_profile_display_img"
+	    android:layout_alignRight="@+id/ibs_profile_display_img"
+	    android:layout_alignLeft="@+id/ibs_profile_display_img"
+	    
+	    android:padding="30dp"
+	    android:visibility="gone"
+	     />
+	
+	<ImageButton
+	    android:id="@+id/ibs_profile_display_button_edit"
+	    
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:src="@drawable/ic_edit_profile"
+	    
+	    style="@style/ProfileEditButtonStyle"
+	    android:contentDescription="@string/ibs_contentDescription_editProfile"
+	    
+	    
+	     />
+	
+	<TextView
+	    android:id="@+id/ibs_profile_display_name"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	   
+	   	android:lines="1"
+	   	android:ellipsize="marquee"
+	   	android:focusableInTouchMode="true"
+	   	android:focusable="true"
+	    android:layout_marginLeft="@dimen/ibs_subtitle_margin_horizontal"
+	    android:layout_toRightOf="@+id/ibs_profile_display_img"
+	    android:layout_toLeftOf="@+id/ibs_profile_display_button_edit"
+	    android:text=""
+	    style="@style/ProfileHeadingText" />
+
+	<TextView
+	    android:id="@+id/ibs_profile_display_email"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:lines="1"
+	   	android:ellipsize="marquee"
+	   	android:focusableInTouchMode="true"
+	   	android:focusable="true"
+	    android:layout_alignLeft="@+id/ibs_profile_display_name"
+	    android:layout_alignRight="@+id/ibs_profile_display_name"
+	    android:layout_below="@+id/ibs_profile_display_name"
+	    android:layout_marginTop="@dimen/min_item_margin"
+	    android:text=""
+	    style="@style/ProfileSubText" />
+	
+	<TextView
+	    android:id="@+id/ibs_profile_display_address1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:lines="1"
+	   	android:ellipsize="marquee"
+	   	android:focusableInTouchMode="true"
+	   	android:focusable="true"
+	    android:layout_alignLeft="@+id/ibs_profile_display_name"
+	    android:layout_alignRight="@+id/ibs_profile_display_name"
+	    android:layout_below="@+id/ibs_profile_display_email"
+	    android:layout_marginTop="@dimen/min_item_margin"
+	    android:text=""
+	    style="@style/ProfileSubText" />
+	<TextView
+	    android:id="@+id/ibs_profile_display_address2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:lines="1"
+	   	android:ellipsize="marquee"
+	   	android:focusableInTouchMode="true"
+	   	android:focusable="true"
+	    android:layout_alignLeft="@+id/ibs_profile_display_name"
+	    android:layout_alignRight="@+id/ibs_profile_display_name"
+	    android:layout_below="@+id/ibs_profile_display_address1"
+	    android:layout_marginTop="@dimen/min_item_margin"
+	    android:text=""
+	    style="@style/ProfileSubText" />
+	
+	<TextView
+	    android:id="@+id/ibs_profile_display_about"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    
+	    android:layout_below="@+id/ibs_profile_display_img"
+	    android:layout_marginTop="10dp"
+	    android:text=""
+	    style="@style/ProfileDescription" />
+	
+	
+	    <TextView
+	        android:id="@+id/ibs_profile_display_selectedTranslation"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/ibs_label_translationsSelected" 
+	        style="@style/SubText"
+	        android:gravity="left"
+	        android:layout_marginTop="@dimen/min_item_margin"
+	        
+	        android:layout_below="@+id/ibs_profile_display_about"
+	        />
+	    
+	     <TextView
+	        android:id="@+id/ibs_profile_display_availableTranslations"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/ibs_label_translationsAvailable" 
+	        style="@style/SubText"
+	        android:gravity="left"
+	        android:layout_marginTop="@dimen/min_item_margin"
+	        
+	        android:layout_below="@+id/ibs_profile_display_selectedTranslation"
+	        />
+	     
+	     <TextView
+	        android:id="@+id/ibs_profile_display_availableTranslations_list"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/ibs_text_translationLineStub" 
+	        style="@style/SubText"
+	        android:gravity="left"
+	        
+	        android:layout_marginLeft="@dimen/ibs_subtitle_margin_horizontal"
+	        android:layout_below="@+id/ibs_profile_display_availableTranslations"
+	        />
+	     
+
+
+</RelativeLayout>

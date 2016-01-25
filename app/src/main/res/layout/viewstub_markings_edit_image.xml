@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+    
+    <TextView
+        android:id="@+id/ibs_markings_editimg_title"
+        style="@style/TitleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+    
+    <include 
+        android:id="@+id/ibs_markings_editimg_addedit_container"
+        layout="@layout/viewstub_add_edit_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ibs_markings_editimg_title"
+        />
+    
+    
+    <FrameLayout 
+        android:id="@+id/ibs_markings_editimg_img_container"
+   		android:layout_width="wrap_content"
+        android:layout_height="@dimen/ibs_max_display_height"
+  
+       	android:layout_alignParentLeft="true"
+        
+        android:layout_below="@+id/ibs_markings_editimg_addedit_container"
+        		>
+			    <ImageView
+			        android:id="@+id/ibs_markings_editimg_preview"
+			        android:layout_width="wrap_content"
+			        android:layout_height="@dimen/ibs_max_display_height"
+			        android:maxHeight="@dimen/ibs_max_display_height"
+			        android:maxWidth="@dimen/ibs_max_display_width"
+			        android:scaleType="fitCenter"
+			        android:layout_gravity="center"        
+			        android:src="@null" />
+			
+			    <ProgressBar
+			        android:id="@+id/ibs_progress_bar_loading"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:visibility="gone"
+			        android:layout_gravity="center"
+			        />
+	
+    </FrameLayout>
+    
+   
+
+    
+    <EditText
+        android:id="@+id/ibs_markings_editimg_input_img_name"
+        style="@style/WhiteEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/ibs_hint_image_name"
+        android:inputType="text" 
+        
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/ibs_markings_editimg_button_save"
+        android:layout_toLeftOf="@+id/ibs_markings_editimg_button_save"
+        android:layout_marginRight="10dp"
+        
+        android:layout_marginTop="-10dp"
+        
+        android:text=""
+         />
+    
+    <ImageButton
+	    android:id="@+id/ibs_markings_editimg_button_save"
+	    
+	    android:src="@drawable/ic_save"
+	    android:background="@drawable/btn_generic_accent_background"
+	    style="@style/ProfileEditButtonStyle"
+	    android:contentDescription="@string/ibs_contentDescription_saveChanges"
+	    
+	    android:layout_alignTop="@+id/ibs_markings_editimg_button_cancel"
+	    android:layout_toLeftOf="@+id/ibs_markings_editimg_button_cancel"
+	    
+	     />
+    <ImageButton
+	    android:id="@+id/ibs_markings_editimg_button_cancel"
+	    	    
+	    android:src="@drawable/ic_cancel"
+	    android:background="@drawable/btn_generic_accent_background"
+	    style="@style/ProfileEditButtonStyle"
+	    android:contentDescription="@string/ibs_contentDescription_cancelChanges"
+	    android:layout_marginTop="-5dp"
+	    android:layout_alignParentRight="true"
+	    android:layout_below="@+id/ibs_markings_editimg_img_container"
+	     />
+
+
+</RelativeLayout>

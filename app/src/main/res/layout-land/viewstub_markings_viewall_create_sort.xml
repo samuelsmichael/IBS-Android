@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    android:gravity="center_vertical"
+	    android:orientation="horizontal"
+	    >	
+      <Button
+          android:id="@+id/ibs_button_viewall_create"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          style="@style/CreateNewButtonStyle"
+          
+          android:gravity="left|center_vertical"
+          
+          />
+      
+      <!-- The given weight allow for an ideal resizing between the smallest possible 
+      mobile resolution and the large mobile resolution. -->
+      
+      <!-- Spacer view. -->
+      <View android:layout_width="0dp"
+      	android:layout_height="1px"
+      	android:layout_weight="1.0"
+          />
+      <include layout="@layout/viewstub_sortby_name_recent"          	     
+  			android:id="@+id/ibs_custom_markings_viewall_sortby_container"
+       		android:layout_width="0dp"
+  			android:layout_height="wrap_content"
+  			android:layout_marginRight="1dp"
+  			android:layout_weight="4.5"
+  			android:visibility="gone"           
+       />
+
+</LinearLayout>

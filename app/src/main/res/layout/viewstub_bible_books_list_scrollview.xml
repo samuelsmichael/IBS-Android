@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/ibs_bible_books_container"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     >
+    <android.support.v7.widget.RecyclerView
+	    android:id="@+id/ibs_bible_books_searchResults_recyclerview"
+	    android:layout_width="match_parent"
+	   	android:layout_height="match_parent"
+	   	android:scrollbars="vertical"
+       	/>
+            
+	<ScrollView 
+			 android:layout_width="match_parent"      
+        	android:layout_height="wrap_content"  
+	        android:fillViewport="true"
+	        android:scrollbars="vertical"
+        >
+        
+            
+            
+             <LinearLayout 
+	            android:id="@+id/ibs_bible_books_container_books"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+		            >
+	            <TextView
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/ibs_label_oldTestament" 
+			        style="@style/SubHeading"
+			        android:gravity="left"
+			        />
+		    
+		    <com.inductivebiblestudyapp.ui.widget.ExpandableHeightGridView
+			        android:id="@+id/ibs_bible_books_gridview_old"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			    	
+			    	style="@style/GridAutoFit"
+			    	
+			    	android:numColumns="2"
+			    	android:fadingEdge="none"
+			    	android:gravity="left"
+			    	android:stretchMode="columnWidth"
+			        />
+		    
+		    <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/ibs_label_newTestament" 
+		        style="@style/SubHeading"
+		        android:gravity="left"
+		        />
+		    
+		    <com.inductivebiblestudyapp.ui.widget.ExpandableHeightGridView
+			        android:id="@+id/ibs_bible_books_gridview_new"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			    	
+			    	style="@style/GridAutoFit"
+			    	
+			    	android:numColumns="2"
+			    	android:fadingEdge="none"
+			    	android:gravity="left"
+			    	android:stretchMode="columnWidth"
+			        />
+		        </LinearLayout>
+            
+        </ScrollView>
+</FrameLayout>       
+    

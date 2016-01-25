@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/ibs_checkbox_divisionTheme_height"
+    android:layout_marginTop="@dimen/ibs_checkbox_divisionTheme_marginTop"
+    android:layout_marginBottom="@dimen/ibs_checkbox_divisionTheme_marginBottom"
+    android:layout_marginLeft="@dimen/ibs_checkbox_divisionTheme_marginLeft"
+    
+    android:drawablePadding="20dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:drawableLeft="@drawable/checkbox_hide_show"
+    android:background="@drawable/btn_generic_accent_background_nocheck"
+  
+	android:text=""
+	android:button="@null"
+	android:checked="true"
+	
+	android:gravity="center_vertical"
+	android:maxLines="2"
+	android:ellipsize="end"
+	style="@style/SubHeading"
+	
+	android:selectAllOnFocus="false"	
+  />
+
+  <!-- We define show as true, hide as false -->

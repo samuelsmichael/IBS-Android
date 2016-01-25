@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+   <!-- Whether to force the markings tab to be larger. -->
+    <bool name="ibs_markings_tab_large">false</bool>
+    
+</resources>

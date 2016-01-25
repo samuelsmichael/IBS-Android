@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+     >
+     
+	<TextView
+           android:id="@+id/ibs_wordStudyDef_title_strongsNumber"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text=""
+           android:textAppearance="?android:attr/textAppearanceLarge"
+           android:layout_marginBottom="@dimen/ibs_wordStudyDef_strongs_verticalPadding"
+            />
+
+	<TextView
+           android:id="@+id/ibs_wordStudyDef_text_transliterationPhonetic"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="" 
+           style="@style/SubText"
+           android:layout_marginTop="@dimen/ibs_wordStudyDef_strongs_verticalPadding"
+           />
+	
+             
+        <TextView
+           android:id="@+id/ibs_wordStudyDef_text_partOfSpeech"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="" 
+           android:textStyle="bold"
+           style="@style/SubText"
+           android:layout_marginTop="@dimen/ibs_wordStudyDef_strongs_verticalPadding"
+           />
+        
+        <TextView
+           android:id="@+id/ibs_wordStudyDef_text_origin"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="" 
+            style="@style/SubText"
+            android:layout_marginTop="@dimen/ibs_wordStudyDef_strongs_small_verticalPadding"
+            android:layout_marginLeft="@dimen/ibs_wordStudyDef_strongs_def_marginLeft"
+           />
+        
+        
+        <TextView
+           android:id="@+id/ibs_wordStudyDef_text_ipdDefinition"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text=""
+           style="@style/SubText" 
+           android:layout_marginLeft="@dimen/ibs_wordStudyDef_strongs_def_marginLeft"
+           android:layout_marginTop="@dimen/ibs_wordStudyDef_strongs_small_verticalPadding"
+           android:layout_marginBottom="@dimen/ibs_wordStudyDef_strongs_verticalPadding"
+           />
+        
+		<TextView
+		    android:id="@+id/ibs_wordStudyDef_text_crossReferences"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="@string/ibs_label_crossReferences"
+		    android:layout_marginTop="@dimen/ibs_wordStudyDef_strongs_verticalPadding"
+		    style="@style/Heading"
+		    android:textStyle="normal" 
+		    
+    		android:layout_marginBottom="@dimen/ibs_wordStudyDef_strongs_verticalPadding"
+		    />
+
+</LinearLayout>

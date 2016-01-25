@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Simple to determine if in portrait or landscape -->
+    <bool name="ibs_in_landscape_mode">false</bool>
+    
+    <!-- Whether to force the markings tab to be larger. -->
+    <bool name="ibs_markings_tab_large">true</bool>
+    
+</resources>

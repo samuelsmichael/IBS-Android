@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:windowBackground="@null"
+    android:background="@null"  
+    >
+
+    <ImageView
+        android:id="@+id/dialog_tooltip_arrowUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:src="@drawable/dialog_tooltip_arrow_up" />
+    
+    <LinearLayout
+       android:id="@+id/linearLayout1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       
+	        android:background="@drawable/popup_background"
+       android:orientation="vertical" >
+
+       <EditText
+           android:id="@+id/dialog_emailSignin_et_email"
+           style="@style/WhiteEditText"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:hint="@string/ibs_hint_email"
+           android:inputType="textEmailAddress" />
+
+       <EditText
+           android:id="@+id/dialog_emailSignin_et_password"
+           style="@style/WhiteEditText"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:hint="@string/ibs_hint_password"
+           android:inputType="textPassword" />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal" >
+
+           <TextView
+               android:id="@+id/dialog_emailSignin_button_forgot"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="2.0"
+               android:gravity="center"
+               android:text="@string/ibs_text_forgotPassword"
+               style="@style/DescriptiveText.Light" />
+
+           <Button
+               android:id="@+id/dialog_emailSignin_button_signin"
+               android:layout_width="wrap_content"
+               android:layout_height="@dimen/ibs_button_height"
+               android:layout_weight="1.0"
+               android:text="@string/ibs_button_signIn"
+               android:textAppearance="?android:attr/textAppearanceMedium"
+               android:textColor="@color/textColorPrimary" />
+       </LinearLayout>
+</LinearLayout>
+    
+    <ImageView
+        android:id="@+id/dialog_tooltip_arrowDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:src="@drawable/dialog_tooltip_arrow_down" />
+
+</LinearLayout>

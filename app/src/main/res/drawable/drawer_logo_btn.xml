@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transition xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Close state -->
+    <item android:id="@+id/drawer_logo_closed">
+		<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+		 
+		    <item  android:left="20dp"  >
+		       <bitmap android:src="@drawable/ic_logo_stacked"/>
+		    </item>
+		    
+		   <item android:left="0dp">
+       			<bitmap android:gravity="left|center_vertical" android:src="@drawable/ic_drawer" />
+    		</item>		   
+		</layer-list>
+	</item>
+	
+    <!-- Open state -->
+    <item android:id="@+id/drawer_logo_open">
+		<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+		 
+		    <item  android:left="20dp">
+		       <bitmap android:src="@drawable/ic_logo_stacked"/>
+		    </item>
+		    
+		   <item android:left="-5dp">
+       			<bitmap android:gravity="left|center_vertical" android:src="@drawable/ic_drawer" />
+    		</item>		   
+		</layer-list>
+	</item>
+</transition>

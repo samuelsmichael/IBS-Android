@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.inductivebiblestudyapp.MainActivity" >
+	<group android:checkableBehavior="all">
+	    <item
+	        android:id="@+id/filter_studyNotes_chapterThemes"
+	        android:visible="true"
+	        android:showAsAction="always"
+	        android:title="@string/ibs_checkbox_chapterThemes"/>
+	    
+	    <item
+	        android:id="@+id/filter_studyNotes_notes"
+	        android:visible="true"
+	        android:showAsAction="always"
+	        android:title="@string/ibs_checkbox_notes"/>
+	    
+	    <item
+	        android:id="@+id/filter_studyNotes_divisionThemes"
+	        android:visible="true"
+	        android:showAsAction="always"
+	        android:title="@string/ibs_checkbox_divisionThemes"/>
+	    
+	    <item
+	        android:id="@+id/filter_studyNotes_imageMarkings"
+	        android:visible="true"
+	        android:showAsAction="always"
+	        android:title="@string/ibs_checkbox_imageMarkings"/>
+	    
+	    <item
+	        android:id="@+id/filter_studyNotes_letteringMarkings"
+	        android:visible="true"
+	        android:showAsAction="always"
+	        android:title="@string/ibs_checkbox_letteringMarkings"/>
+	</group>
+</menu>

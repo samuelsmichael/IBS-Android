@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:gravity="bottom|center_horizontal"
+    android:layout_gravity="bottom|center_horizontal"
+    >
+    
+        <!-- <item name="android:layout_width">@dimen/min_touch_size</item>
+	    <item name="android:layout_height">@dimen/min_touch_size</item>
+	    <item name="android:layout_marginLeft">@dimen/min_item_margin</item>
+	    <item name="android:layout_marginRight">@dimen/min_item_margin</item>	 -->
+
+    <ImageButton
+        android:id="@+id/ibs_social_button_email"
+        style="@style/SocialButtonStyle"
+        android:src="@drawable/ic_email" 
+        android:contentDescription="@string/ibs_contentDescription_social_email"
+        />
+
+    <ImageButton
+        android:id="@+id/ibs_social_button_facebook"
+        style="@style/SocialButtonStyle"
+        android:src="@drawable/ic_facebook" 
+        android:contentDescription="@string/ibs_contentDescription_social_facebook"/>
+
+    <ImageButton
+        android:id="@+id/ibs_social_button_twitter"
+        style="@style/SocialButtonStyle"
+        android:src="@drawable/ic_twitter" 
+        android:contentDescription="@string/ibs_contentDescription_social_twitter" />
+
+    <ImageButton
+        android:id="@+id/ibs_social_button_linkedin"
+        style="@style/SocialButtonStyle"
+        android:src="@drawable/ic_linkedin"
+        android:contentDescription="@string/ibs_contentDescription_social_linkedin" />
+
+    <ImageButton
+        android:id="@+id/ibs_social_button_google_plus"
+        style="@style/SocialButtonStyle"
+        android:src="@drawable/ic_gplus" 
+        android:contentDescription="@string/ibs_contentDescription_social_googlePlus"
+        />
+
+</LinearLayout>

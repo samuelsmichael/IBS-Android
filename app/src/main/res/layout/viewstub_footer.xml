@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/min_touch_size"
+    android:layout_gravity="center_horizontal|bottom"
+    android:gravity="center"
+    android:orientation="horizontal"
+    tools:ignore="RtlHardcoded" >
+
+    <Button
+        android:id="@+id/ibs_footer_home"
+        style="@style/TouchableFooterText"
+        android:gravity="right|center"
+        android:text="@string/ibs_footer_home" 
+        
+        />
+
+    <View style="@style/SimpleDivider" />
+    
+    <Button
+        android:id="@+id/ibs_footer_about"
+        style="@style/TouchableFooterText"
+        android:text="@string/ibs_footer_about" 
+        
+        />
+
+    <View style="@style/SimpleDivider" />
+
+    <Button
+        android:id="@+id/ibs_footer_contact"
+        style="@style/TouchableFooterText"        
+        android:text="@string/ibs_footer_contact" 
+        
+        />
+
+    <View style="@style/SimpleDivider" />
+
+    <Button
+        android:id="@+id/ibs_footer_privacy"
+        style="@style/TouchableFooterText"
+        android:text="@string/ibs_footer_privacy" 
+        
+        />
+
+    <View style="@style/SimpleDivider" />
+
+    <Button
+        android:id="@+id/ibs_footer_terms"
+        style="@style/TouchableFooterText"
+        android:gravity="left|center"
+        android:text="@string/ibs_footer_terms" 
+        
+        />
+
+</LinearLayout>

@@ -1,0 +1,145 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fefefe"
+    android:orientation="vertical" 
+    
+    >
+     
+        <android.support.v7.widget.Toolbar
+	    android:id="@+id/ibs_email_share_toolbar"
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:minHeight="?attr/actionBarSize"
+	    android:background="#b4b4b4" 
+	    android:elevation="2dp"
+	    android:layout_marginLeft="0dp"
+	    android:paddingLeft="0dp"
+    > 
+    
+	     <LinearLayout
+	    
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    
+	    android:orientation="horizontal"
+	    android:layout_gravity="center"
+	     >
+	     
+	         <LinearLayout
+	    
+	             android:id="@+id/ibs_email_button_cancel"
+		    android:layout_width="wrap_content"
+		    android:layout_height="@dimen/min_touch_size"
+		    
+		    android:orientation="horizontal"
+		    android:gravity="center_vertical"
+		    
+	        android:contentDescription="@android:string/cancel"
+	        android:background="@drawable/btn_generic_accent_background"
+		    
+		     >
+		         <ImageView
+		             android:layout_width="wrap_content"
+		             android:layout_height="wrap_content"
+		             android:src="@drawable/ic_arrow_left" 
+		             android:contentDescription="@android:string/cancel"
+		             />
+	
+		         <ImageView
+		             
+		             android:layout_width="@dimen/min_touch_size"
+		             android:layout_height="@dimen/small_touch_size"
+		             android:src="@drawable/ic_email"
+		             android:scaleType="centerInside"
+		             android:contentDescription="@android:string/cancel" 
+		             android:padding="4dp"
+		             />
+	         </LinearLayout>
+
+			
+	
+	         <View android:layout_width="0dp"
+	             android:layout_height="1px"
+	             android:layout_weight="1.0"
+	             />
+	         <Button
+	             android:id="@+id/ibs_email_button_share"
+	             
+	             android:layout_width="wrap_content"
+	             android:layout_height="match_parent"
+	             android:text="@string/ibs_button_email_share" 
+	             android:textSize="14sp"
+	             android:paddingLeft="16dp"
+	             android:paddingRight="16dp"
+	             android:layout_margin="0dp"
+	             android:layout_gravity="center_vertical|right"
+	             android:theme="@style/NormalButtonStyle"
+	             
+	             />
+	
+	     </LinearLayout>
+     </android.support.v7.widget.Toolbar>
+
+	<ScrollView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            
+	  		android:layout_marginLeft="@dimen/activity_horizontal_margin"
+	  		android:layout_marginRight="@dimen/activity_horizontal_margin"
+            >
+	        <LinearLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            >
+		        <EditText
+		            android:id="@+id/ibs_email_input_sendTo"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:ems="10"
+		            android:inputType="textEmailAddress" 
+		            android:textColor="@android:color/black"
+		            android:textColorHint="@color/ibs_gray"
+		            android:hint="@string/ibs_hint_email_shareAddresses"
+		            
+		            android:layout_marginTop="@dimen/activity_vertical_margin"
+		    		android:layout_marginBottom="@dimen/activity_vertical_margin"
+		            >
+		
+		            <requestFocus />
+		        </EditText>
+		
+		        <EditText
+		            android:id="@+id/ibs_email_input_content_body"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:ems="10"
+		            android:inputType="textMultiLine" 
+		            android:textColor="@android:color/black"
+		            android:textColorHint="@color/ibs_gray"
+		            android:hint="@string/ibs_hint_email_shareMessage"
+		            android:layout_marginTop="@dimen/activity_vertical_margin"
+		    		android:layout_marginBottom="@dimen/activity_vertical_margin"
+		            />
+		        
+		         <ImageView
+			        android:id="@+id/ibs_email_image_preview"
+			        android:layout_width="wrap_content"
+			        android:layout_height="@dimen/ibs_max_display_height"
+			        android:maxHeight="@dimen/ibs_max_display_height"
+			        android:maxWidth="@dimen/ibs_max_display_width"
+			        
+			        android:scaleType="fitCenter"
+			        android:src="@null" 
+			        android:visibility="gone"
+			        
+			        android:layout_marginTop="@dimen/activity_vertical_margin"
+			   		android:layout_marginBottom="@dimen/activity_vertical_margin"
+			        />
+	         </LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+     >
+
+    <ImageView
+        android:id="@+id/ibs_markings_displayimg_preview"
+        android:layout_width="0dp"
+         android:layout_height="@dimen/ibs_max_display_height"
+        android:maxHeight="@dimen/ibs_max_display_height"
+        android:maxWidth="@dimen/ibs_max_display_width"
+        
+        android:scaleType="fitCenter"
+        android:src="@null" 
+        android:layout_weight="2.0"
+        />
+
+    <RelativeLayout 
+        android:layout_marginLeft="@dimen/min_item_margin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        >
+    <TextView
+        android:id="@+id/ibs_markings_displayimg_label_img_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        
+        
+        android:text=""
+        style="@style/SubText" />
+    
+    <ImageButton
+	    android:id="@+id/ibs_markings_displayimg_button_edit"
+	    
+	    android:src="@drawable/ic_edit"
+	    android:background="@drawable/btn_generic_accent_background"
+	    style="@style/ProfileEditButtonStyle"
+	    android:contentDescription="@string/ibs_contentDescription_editImage"
+	    
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/ibs_markings_displayimg_label_img_name"
+	    
+	    
+	     />
+    <ImageButton
+	    android:id="@+id/ibs_markings_displayimg_button_delete"
+	    	    
+	    android:src="@drawable/ic_delete"
+	    android:background="@drawable/btn_generic_accent_background"
+	    style="@style/ProfileEditButtonStyle"
+	    android:contentDescription="@string/ibs_contentDescription_deleteImage"
+	    android:layout_marginTop="-2dp"
+	    
+	    android:layout_alignTop="@+id/ibs_markings_displayimg_button_edit"
+	    android:layout_toRightOf="@+id/ibs_markings_displayimg_button_edit"
+	     />
+    </RelativeLayout>
+    
+
+</LinearLayout>

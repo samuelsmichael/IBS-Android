@@ -1,0 +1,8 @@
+<resources>
+
+    <!-- The width used for both the title & list items of chapter -->
+    <dimen name="ibs_notes_chapter_width">125dp</dimen>
+    <!-- The width used for both the title & list items of verse -->
+    <dimen name="ibs_notes_verse_width">110dp</dimen>
+
+</resources>

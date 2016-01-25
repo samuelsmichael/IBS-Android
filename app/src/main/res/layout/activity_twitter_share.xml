@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:background="#fff"
+     >
+	
+	<ScrollView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+	  		android:layout_marginLeft="@dimen/activity_horizontal_margin"
+	  		android:layout_marginRight="@dimen/activity_horizontal_margin"
+	  		 >
+	        <LinearLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            android:layout_gravity="center_horizontal"
+	            android:gravity="top|center"
+          	 android:paddingTop="65dp"
+	  		
+	            >
+		
+		        <EditText
+		            android:id="@+id/ibs_twitter_input_content_body"
+		            
+		            
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:ems="10"
+		            android:inputType="textMultiLine" 
+		            android:textColor="@android:color/black"
+		            android:textColorHint="@color/ibs_gray"
+		            android:hint="@string/ibs_hint_twitter_shareMessage"
+		            />
+		        
+		         <ImageView
+			        android:id="@+id/ibs_twitter_image_preview"
+			        android:layout_width="wrap_content"
+			        android:layout_height="@dimen/ibs_max_display_height"
+			        android:maxHeight="@dimen/ibs_max_display_height"
+			        android:maxWidth="@dimen/ibs_max_display_width"
+			        android:scaleType="fitCenter"
+			        android:src="@null" 
+			        android:visibility="gone"
+			        
+			        android:layout_marginTop="@dimen/activity_vertical_margin"
+			   		android:layout_marginBottom="@dimen/activity_vertical_margin"
+			        />
+	         </LinearLayout>
+	</ScrollView>
+	
+	<android.support.v7.widget.Toolbar
+	    android:id="@+id/ibs_twitter_share_toolbar"
+	  	android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:minHeight="?attr/actionBarSize"
+	    
+	    android:elevation="0dp"
+	    
+    	android:background="#fff"
+    	> 
+    
+	     <LinearLayout
+	    
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:minHeight="40dp"
+	    
+	    android:orientation="horizontal"
+	    
+	    android:layout_gravity="center"
+	    
+	     >
+			<TextView
+	             android:id="@+id/ibs_twitter_text_cancel"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:drawableLeft="@drawable/ic_arrow_left_blue" 
+	             android:gravity="center"
+	             android:drawablePadding="4dp"
+	             android:padding="6dp"
+	             android:background="@null"
+	             android:text=""
+	             android:contentDescription="@string/ibs_contentDescription_twitter_back"
+	             style="@style/SubHeading"
+	             android:textColor="@android:color/black"
+	             />
+	
+	         
+	         <TextView
+			    android:id="@+id/ibs_twitter_share_text_characterRemaining"
+			    
+			    android:layout_width="0dp"
+			    android:layout_height="match_parent"
+			    			    
+	            android:maxLines="1"
+	            android:singleLine="true"
+			    
+	           	android:layout_weight="1.0"
+			    
+			    android:text="0" 
+			    android:textColor="@color/ibs_gray"
+			    android:layout_margin="5dp"
+			    android:gravity="center_vertical|right"
+			    />
+	         
+	         <Button
+	             android:id="@+id/ibs_twitter_button_share"
+	             style="?android:attr/buttonStyleSmall"
+	             android:layout_width="wrap_content"
+	             android:layout_height="match_parent"
+	             android:text="@string/ibs_button_twitter_share"
+	             
+	             
+	             android:textSize="14sp"
+	             android:paddingLeft="16dp"
+	             android:paddingRight="16dp"
+	             
+	             android:layout_margin="0dp"
+	             
+	             android:layout_gravity="center_vertical|right"
+	             android:background="@drawable/btn_twitter_background"
+	              
+	              android:textAllCaps="false"
+	             />
+	
+	     </LinearLayout>
+     </android.support.v7.widget.Toolbar>
+</FrameLayout>

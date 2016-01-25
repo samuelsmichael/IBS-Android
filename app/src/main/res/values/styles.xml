@@ -1,0 +1,398 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/bg_color</item>
+        
+        <!--  Required for nice contextual actionbar -->
+        <item name="windowActionModeOverlay">true</item>
+        
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+                
+        <!-- Default button style is SignInButtonStyle unless stated otherwise. -->
+        <!-- <item name="android:buttonStyle">@style/SignInButtonStyle</item> -->
+        
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="android:textColorSecondary">@color/textColorSecondary</item>
+        
+        <!-- Set ALL buttons to green. -->
+        <item name="colorButtonNormal">@color/ibs_button_green</item>
+        <!-- Set colours like spinner arrows & unselected radios -->
+        <item name="colorControlNormal">@color/ibs_gray</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        
+    </style>
+    
+    <!-- Style for share activites etc. -->
+    <style name="OverlayActionBar"  parent="@style/Theme.AppCompat.NoActionBar">
+        
+        <!--  Required for nice contextual actionbar -->
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+    
+    <!-- =============================================================================== -->
+    
+    <!-- Define button styles here 
+    This was slightly more annoying that expected. Worth noting the following: 
+    -https://code.google.com/p/android/issues/detail?id=78428
+    -http://stackoverflow.com/questions/26519979/coloring-buttons-in-android-with-material-design-and-appcompat
+    -->
+    <eat-comment />
+    
+    <!-- Used to create buttons with create text -->
+    <style name="CreateNewButtonStyle" > 
+        <item name="android:background">@drawable/btn_generic_accent_background</item>
+        <item name="android:drawableLeft">@drawable/ic_create</item> 
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:text">@string/ibs_button_create</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+            
+    <!-- This is actually a theme -->
+    <style name="NormalButtonStyle" parent="@android:style/Widget.Button"> 
+        <item name="colorButtonNormal">@color/ibs_button_green</item> 
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+    
+    <!-- This is actually a theme -->
+    <!-- Button used for update packages and for signup -->
+    <style name="SpecialButtonStyle" parent="@android:style/Widget.Button"> 
+        <item name="colorButtonNormal">@color/ibs_button_blue</item> 
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+    
+    <!-- This is actually a theme -->
+    <!-- Button used for cancel and for "no" -->
+    <style name="GrayButtonStyle" parent="@android:style/Widget.Button"> 
+        <item name="colorButtonNormal">@color/ibs_gray</item> 
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+    
+    <!-- Style of the upgrade button used in the action bar -->
+    <style name="UpgradeButtonStyle" parent="@android:style/Widget.Button"> 
+        <item name="android:background">@drawable/btn_alpha_red_border</item> 
+        <item name="android:textColor">@color/selector_btn_upgrade</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+    
+    <!-- The style for social buttons -->
+    <style name="SocialButtonStyle" parent="ImageButtonStyle.NoBackground"> 
+        <item name="android:padding">3dp</item>
+        <item name="android:scaleType">fitXY</item>
+        
+        <item name="android:layout_width">@dimen/small_touch_size</item>
+	    <item name="android:layout_height">@dimen/small_touch_size</item>
+    </style>
+    
+    <!-- The style for profile edit buttons -->
+    <style name="ProfileEditButtonStyle"  parent="ImageButtonStyle.NoBackground" > 
+       <item name="android:layout_width">@dimen/small_touch_size</item>
+	    <item name="android:layout_height">@dimen/small_touch_size</item>
+	    
+	    <item name="android:paddingLeft">7dp</item>
+	    <item name="android:paddingRight">7dp</item>
+	    	    
+	    <item name="android:paddingTop">0dp</item>
+	    <item name="android:paddingBottom">0dp</item>
+	    
+	    <item name="android:scaleType">centerInside</item>
+	    
+    </style>
+    
+    <!-- The style for no background image buttons -->
+    <style name="ImageButtonStyle.NoBackground" parent="@android:style/Widget.Button"> 
+        <item name="android:background">@drawable/btn_generic_accent_background</item>
+        <item name="android:layout_margin">@dimen/min_item_margin</item>	
+    </style>
+	
+    <!-- =============================================================================== -->
+    
+
+	<!-- Footer styles defined here -->
+	<eat-comment />
+
+    <!-- Divider view used in footer -->
+    <style name="SimpleDivider">
+	    <item name="android:background">@color/ibs_divider_orange</item>
+	    
+	    <item name="android:layout_width">1dp</item>
+	    <item name="android:layout_height">@dimen/ibs_divider_height</item>
+	    
+	    <item name="android:layout_gravity">center</item>
+	    
+	    <!-- Item Margins defined here, as they are between clickable elements -->	    	    
+	    <item name="android:layout_marginLeft">@dimen/ibs_divider_margins</item>
+	    <item name="android:layout_marginRight">@dimen/ibs_divider_margins</item>	
+	</style>
+	
+    <!-- Defines the minimums for the touchable footer text -->
+    <style name="TouchableFooterText">
+	    <item name="android:textColor">@color/selector_footer_item</item>
+	    <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+	    <item name="android:clickable">true</item>
+	    <item name="android:background">@null</item>
+	    
+	    <item name="android:minWidth">@dimen/min_touch_size</item>
+	    <item name="android:minHeight">@dimen/min_touch_size</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:layout_width">wrap_content</item>	    
+	    
+	    <item name="android:gravity">center</item>
+	    
+	</style>
+	
+    <!-- =============================================================================== -->
+    
+	
+     <!-- Dialog styles -->
+    
+     
+    <!--  Remove dialog styles and replace them with this  -->
+    <style name="SimpleToolTipDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        
+        <!-- @null seems to cause the inner background to repeat itself in the padding  -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowContentOverlay">@android:color/transparent</item>
+        
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        
+    </style>
+    
+    <!-- The dialog for simple confirms, not tooltip. -->
+    <style name="SimpleConfirmDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+                
+         <item name="android:windowBackground">@drawable/popup_background</item>
+        <item name="android:backgroundDimEnabled">false</item>        
+        <item name="android:windowContentOverlay">@android:color/transparent</item>
+        
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        
+    </style>
+    
+    <!-- The dialog for simple yes/no confirms and dark popups. -->
+    <style name="SimpleDarkDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+                
+         <item name="android:windowBackground">@drawable/popup_background_dark</item>
+                
+        <item name="android:windowContentOverlay">@android:color/transparent</item>
+        
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustResize</item>
+        
+    </style>
+    
+    <!-- The dialog for simple yes/no confirms and dark popups. -->
+    <style name="ActivityDarkDialog" parent="@style/Theme.AppCompat.Dialog">
+        <item name="windowNoTitle">true</item>        
+        
+        <item name="android:windowBackground">@drawable/popup_background_dark</item>
+        <item name="background">@drawable/popup_background_dark</item>
+        
+        <item name="android:buttonStyle">@style/NormalButtonStyle</item>
+        
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="android:textColorSecondary">@color/textColorSecondary</item>
+        
+        <!-- Set ALL buttons to green. -->
+        <item name="colorButtonNormal">@color/ibs_button_green</item>     
+    </style>
+    
+    
+     <!-- =============================================================================== -->
+    
+    
+	
+     <!-- Text styles defined here -->
+	<eat-comment />
+	
+	<style name="PriceText">
+	    <item name="android:textSize">20sp</item>
+		<item name="android:textColor">@color/textColorPrimary</item>
+		<item name="android:textStyle">bold</item>	    
+	</style>
+	
+	
+	<!-- Titles such as the profile name "John Doe" -->
+	<style name="ProfileHeadingText">
+	    <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+		<item name="android:textColor">@color/textColorPrimary</item>
+		<item name="android:textStyle">bold</item>	    
+	</style>
+	
+	<!-- Not quite heading, not quite dismissive. -->
+	<style name="ProfileSubText" parent="SubText">	    
+	</style>
+	
+	<style name="ProfileDescription" parent="DescriptiveText" >
+   	    <item name="android:gravity">left</item>
+	</style>
+	
+	
+	<!-- Titles such as "Contact us" -->
+	<style name="TitleText.Large" parent="TitleText">
+	    <item name="android:textSize">28sp</item>
+	</style>
+	
+	<!--General titles -->
+	<style name="TitleText"  >
+	    <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+	    <item name="android:textSize">28sp</item>
+		<item name="android:textColor">@color/textColorPrimary</item>
+	     
+	    <item name="android:gravity">center</item>	    
+	</style>
+	
+	<!-- Heading text  -->
+	<style name="Heading" parent="SubText" >
+	    <item name="android:textStyle">bold</item>
+	    <item name="android:textSize">19sp</item>	    
+	</style>
+	
+	<!-- Sub heading text  -->
+	<style name="SubHeading" parent="SubText" >
+	    <item name="android:textStyle">bold</item>	    
+	</style>
+	
+	<style name="SubText">
+	    <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+	    <item name="android:textSize">16sp</item>
+		<item name="android:textColor">@color/textColorPrimary</item>	    
+	</style>
+	
+	<!-- Defines styles for bible verse (and the base of letterings) -->
+	<style name="BibleVerseText" parent="DescriptiveText">    
+	    <item name="android:gravity">left</item>
+	</style>
+	
+	<!-- Defines styles for bible copyright (and letterings) -->
+	<style name="CopyrightText" parent="DescriptiveText">
+	    <item name="android:lineSpacingMultiplier">1.0</item>
+	    <item name="android:gravity">bottom|center_horizontal</item>
+	    <item name="android:textSize">10sp</item>		   
+	</style>
+	
+	<!-- Defines styles for text bodies -->
+    <style name="DescriptiveText">
+	    <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+		<item name="android:textColor">@color/textColorPrimary</item>
+	    
+	    <!-- Extra line spacing	 -->
+	    <item name="android:lineSpacingMultiplier">1.2</item>	    
+	    <item name="android:gravity">center</item>
+	</style>
+	
+    <style name="GridText">
+	    <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+		<item name="android:textColor">@color/textColorPrimary</item>
+	        
+	    <item name="android:gravity">center</item>
+	</style>
+	
+    <!-- title text places on white background -->
+    <style name="TitleText.Large.Light" parent="TitleText.Large" >
+		<item name="android:textColor">@color/textColorSecondary</item>
+	</style>
+    
+    <!-- Descriptive text places on white background -->
+    <style name="DescriptiveText.Light" parent="DescriptiveText">
+		<item name="android:textColor">@color/textColorSecondary</item>
+	</style>
+	
+    <!-- =============================================================================== -->
+    
+	
+    
+    <!-- =============================================================================== -->
+    
+     <!-- Misc. styles defined here -->
+	<eat-comment />
+	
+	<!-- Defines the image styles for the profile image -->
+    <style name="ProfileImage" >
+    	<item name="android:scaleType">centerInside</item>
+    	<item name="android:layout_width">100dp</item>
+    	<item name="android:layout_height">100dp</item>    	
+    	<item name="android:maxWidth">200dp</item>
+    	<item name="android:maxHeight">200dp</item>
+    	<item name="android:layout_marginTop">4dp</item>
+    	<item name="android:padding">0dp</item>
+ 	</style>
+	
+    <!-- Used to ensure input text areas are white -->
+    <style name="WhiteEditText" parent="Widget.AppCompat.EditText">
+    	<item name="android:background">@drawable/edittext_white_background</item>
+    	<item name="android:textColorHint">@color/ibs_gray</item>
+    	<item name="android:textColor">@android:color/black</item>
+    	<item name="android:padding">18dp</item>    	
+    	<item name="android:inputType">textCapSentences|textAutoCorrect</item>
+ 	</style>
+
+    <!-- Animation for fading between views. -->
+    <style name="FadeAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+    
+    <!-- Used to ensure the grid keeps a constant centering + size with autofitting. -->
+    <style name="GridAutoFit">
+    	<item name="android:numColumns">auto_fit</item>
+    	<item name="android:columnWidth">100dp</item>
+    	<item name="android:verticalSpacing">4dp</item>
+    	<item name="android:horizontalSpacing">4dp</item>
+    	<item name="android:gravity">center</item>
+    	<item name="android:stretchMode">spacingWidthUniform</item>    	   	
+ 	</style>    
+ 	
+    
+    <!-- Use for spinner styling -->
+    <style name="BasicSpinnerStyle" >
+    	<item name="android:textColor">@color/textColorPrimary</item>
+    	<item name="android:gravity">center</item>
+    	<item name="android:background">@color/ibs_dark_gray</item>
+    	<item name="android:textAppearance">?android:attr/textAppearanceMedium</item>  	  	
+ 	</style>  
+ 	
+    
+    <style name="SearchViewDefault" >
+    	<item name="android:iconifiedByDefault">false</item>
+    	<item name="android:hint">@string/ibs_hint_search</item>
+    	<item name="android:queryHint">@string/ibs_hint_search</item>   
+    	<item name="android:background">@drawable/edittext_white_background</item>
+    	<item name="android:textColorHint">@color/ibs_gray</item>
+    	<item name="android:textColor">@android:color/black</item>	
+    	<item name="android:drawableLeft">@android:drawable/ic_search_category_default</item>
+    	<item name="android:drawableRight">@drawable/ic_clear_search</item>
+    	<item name="android:paddingRight">8dp</item>    	
+    	<item name="android:maxLines">1</item>
+    	<item name="android:singleLine">true</item>
+    	<item name="android:imeOptions">actionSearch</item>
+    	<item name="android:inputType">textCapSentences|textAutoCorrect</item>
+ 	</style>   
+ 	
+    <style name="TextLoadingProgressBar" parent="@android:style/Widget.Holo.ProgressBar">
+        <!-- Used to define constants sizes throughout -->
+    </style>
+    
+   
+</resources>

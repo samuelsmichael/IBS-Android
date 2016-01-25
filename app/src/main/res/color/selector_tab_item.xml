@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- Selected state -->
+    <item android:state_selected="true" android:color="@color/ibs_white" />
+    
+    <!-- Click states -->
+    <item android:state_focused="true" android:color="@color/colorAccent" />
+    <item android:state_pressed="true" android:color="@color/colorAccent" />
+    
+    <!-- Not selected state. -->
+    <item android:color="@color/ibs_light_gray" />
+    
+</selector>

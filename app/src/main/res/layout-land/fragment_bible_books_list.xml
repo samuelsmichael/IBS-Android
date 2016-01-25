@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+	    
+    <TextView
+        android:id="@+id/ibs_bible_books_titleSummary"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="@string/ibs_label_booksInOrder" 
+        style="@style/SubHeading"
+        android:gravity="left|center_vertical"
+        android:layout_weight="1.0"
+        />
+    
+    <com.inductivebiblestudyapp.ui.widget.ClearableEditText
+		    android:id="@+id/ibs_bible_books_search"
+		    android:layout_width="0dp"
+		    android:layout_height="match_parent"
+		    android:ems="10"
+		    style="@style/SearchViewDefault" 
+		    android:layout_weight="1.0"
+		    />
+    </LinearLayout>
+    
+    <include layout="@layout/viewstub_bible_books_list_scrollview"
+   		android:id="@+id/ibs_bible_books"
+        android:layout_width="match_parent"
+        android:gravity="bottom"
+        android:layout_height="wrap_content"
+        
+        />
+    
+</LinearLayout>

@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.inductivebiblestudyapp.MainActivity" >
+
+    
+   <item
+        android:id="@+id/select_custom_marking"
+        android:visible="true"
+        android:title="@string/ibs_title_customMarkings"
+        android:titleCondensed="@string/ibs_title_customMarkingsShort"
+        android:icon="@drawable/ic_edit"
+        android:showAsAction="always|withText"
+        />    
+
+</menu>

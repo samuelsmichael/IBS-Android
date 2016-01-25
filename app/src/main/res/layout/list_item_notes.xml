@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   	android:minHeight="?android:attr/listPreferredItemHeight"
+    android:divider="@null"
+    android:gravity="center"
+
+    android:orientation="horizontal"
+    android:background="@drawable/btn_generic_accent_background"
+     >
+
+	    <TextView
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/list_item_notes_book" 
+	        android:text=""
+	        style="@style/SubText"
+	        android:gravity="left|center_horizontal"
+	        android:layout_weight="1.0"
+	        />
+	    
+	    <TextView
+	        android:layout_width="@dimen/ibs_notes_chapter_width"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/list_item_notes_chapter" 
+	        android:text=""
+	        style="@style/SubText"
+	        android:gravity="center"
+	        />
+	    
+	    <TextView
+	        android:layout_width="@dimen/ibs_notes_verse_width"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/list_item_notes_verse" 
+	        android:text=""
+	        style="@style/SubText"
+	        android:gravity="center"
+	        
+	        />
+    
+    </LinearLayout>

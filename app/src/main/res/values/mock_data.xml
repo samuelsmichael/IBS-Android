@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- This data is for developing purposes only; it will be removed 
+    once the real data is supplied. In the mean time: Lorem Ipsum for all!
+    ...or just you actually.  -->
+    <eat-comment />
+    
+    <!-- break code here -->
+    
+      <string name="ibs_lorem_ipsum_welcome">Welcome! Lorem ipsum dolor sit amet, mel consul 
+        commune et. Ea vis unum nostrud percipitur, aperiri debitis patrioque no mei, quo 
+        gubergren appellantur consectetuer id.</string>
+        
+    <string name="ibs_lorem_ipsum">Lorem ipsum</string>
+        
+    <string name="ibs_lorem_ipsum_short">Lorem ipsum dolor sit amet, mel consul 
+        commune et. Ea vis unum nostrud percipitur.</string>
+        
+    <string name="ibs_lorem_ipsum_medium">Lorem ipsum dolor sit amet, mel consul commune et. Ea vis unum nostrud percipitur, aperiri debitis patrioque no mei, quo gubergren appellantur consectetuer id. Modo docendi volutpat ut mel, id ius tantas omnesque. Causae euismod vis no, quodsi graecis sea ad.</string>
+
+     <string name="ibs_lorem_ipsum_long">Lorem ipsum dolor sit amet, mel consul commune et. Ea vis unum nostrud percipitur, aperiri debitis patrioque no mei, quo gubergren appellantur consectetuer id. Modo docendi volutpat ut mel, id ius tantas omnesque. Causae euismod vis no, quodsi graecis sea ad.
+
+Vel at dico ullum. Facilisi moderatius voluptatibus ei sit. Te erat albucius vel, quo ei autem appetere conclusionemque. Duo ex appetere mandamus maiestatis. Aperiam voluptatum scripserit sit an, ius eu hinc errem definiebas.</string>
+ <!-- -->
+     <string name="ibs_fake_name">John Doe</string>
+     <string name="ibs_fake_email">johndoe@email.com</string>
+     <string name="ibs_fake_address_line1">123 Main Street</string>
+     <string name="ibs_fake_address_line2">Miami FL, 33333</string>
+
+    
+</resources>

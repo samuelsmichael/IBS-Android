@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Simple way to add landscape strings. 
+    REMEMBER TO ADD INTO BOTH. -->
+    
+    <!-- Profile Tab titles -->
+    <eat-comment />
+    <string-array name="ibs_profile_tab_titles" >
+    	<item>Profile</item>
+		<item>Bible</item>
+		<item>Study Notes</item>
+		<item>Custom Markings</item>
+	</string-array>
+	
+    <string name="ibs_button_filterNotes">Filter</string>
+</resources>

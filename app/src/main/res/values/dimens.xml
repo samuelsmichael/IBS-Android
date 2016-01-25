@@ -1,0 +1,149 @@
+<resources>
+    <!-- Refer to: 
+    http://www.google.com/design/spec/layout/metrics-keylines.html#metrics-keylines-incremental-keylines
+    for guidelines used for clickable size and margins 
+     -->
+    
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fragment_tab_vertical_margin">10dp</dimen>
+    
+    <!-- The widths of elements used for the home list -->
+    <dimen name="ibs_extra_horizontal_margin">30dp</dimen>
+    
+    <!-- We shouldn't go this small but we are-->
+    <dimen name="small_touch_size">44dp</dimen>
+    <!-- Minimum touch height/width -->
+    <dimen name="min_touch_size">48dp</dimen>
+    <!-- Minimum item margin between touchable elements (prevents "misclicks");
+    8dp between elements, thus 4dp -->
+    <dimen name="min_item_margin">4dp</dimen>
+    
+    <!-- The height of the logo in landscape mode. -->
+    <dimen name="ibs_logo_land_height">80dp</dimen>
+    
+    <!-- The height of dividers-->
+    <dimen name="ibs_divider_height">14dp</dimen>
+    <!-- Must be larger than min_item_margins. However, extra margins for appearances. -->
+    <dimen name="ibs_divider_margins">5dp</dimen>
+
+    <!-- The heights for buttons such as sign in/up -->
+    <dimen name="ibs_button_height">60dp</dimen>
+    
+    <!-- The horizontal margins for subtitles -->
+    <dimen name="ibs_subtitle_margin_horizontal">8dp</dimen>
+    <!-- The horizontal margins for check boxes -->
+    <dimen name="ibs_subcheckbox_margin_horizontal">16dp</dimen>
+     
+    <!-- The margins between items -->
+    <dimen name="ibs_home_item_margins">30dp</dimen>
+    
+     
+    <!-- The profile image size in raw PIXELS: 150 * 3 (that is, XXHDPI)-->
+    <dimen name="ibs_profile_image_size">450px</dimen>
+     <!-- The general image size in raw PIXELS: 600 * 3 (that is, XXHDPI)
+     Note: We tried 2160px originally but, for whatever reason, the server rejects this 
+     when creating -->
+    <dimen name="ibs_general_image_size">1800px</dimen>
+    <!-- The max display height for app -->
+    <dimen name="ibs_max_display_height">190dp</dimen>
+    <!-- The max display width for app -->
+    <dimen name="ibs_max_display_width">400dp</dimen>
+        
+    <!-- The thumnail height/width to use for images. -->
+    <dimen name="ibs_grid_thumbnail_height">65dp</dimen>
+    <!-- The width used for thumnail width -->
+    <dimen name="ibs_grid_thumbnail_width">100dp</dimen>
+    
+    <!-- The thumnail height/width to use for image grid. -->
+    <dimen name="ibs_grid_height">145dp</dimen>
+    <dimen name="ibs_grid_width">130dp</dimen>
+    
+    <!-- The height of the library view for images. -->
+    <dimen name="ibs_horizontal_thumbnail_list_height">135dp</dimen>
+    <!-- The height of lettering ite,ms -->
+    <dimen name="ibs_horizontal_lettering_list_height">100dp</dimen>
+    
+    <!-- The minimum width for the dialog -->
+    <dimen name="ibs_dialog_save_minWidth">300dp</dimen>
+    
+    
+    <!-- The max width for the upgrade button -->
+    <dimen name="ibs_button_upgrade_maxWidth">230dp</dimen>
+    
+    <!-- Starting dimens for bible chapter related items -->
+    <eat-comment/>
+    
+    <!-- The verse number padding -->
+    <dimen name="ibs_bible_verseNumber_padding">22sp</dimen>
+    
+    <!-- The verse number test size -->
+    <dimen name="ibs_bible_verseNumber_textSize">18sp</dimen>
+    
+    <!-- The Chapter Name width; the maximum with of chapter names such as "Revelation 12" 
+    Also used to scale the Chapter theme buttons. -->
+    <dimen name="ibs_bible_chapterTitle_maxWidth">225dp</dimen>
+    
+    <!-- The padding used to reduce the button image size. 
+    The smaller the padding, the bigger the image -->
+    <dimen name="ibs_bible_chapter_buttonPadding">13dp</dimen>
+    <!-- The padding used to reduce the button image size. 
+    The smaller the padding, the bigger the image -->
+    <dimen name="ibs_bible_chapter_noteButtonPadding">10dp</dimen>
+    <!-- The padding used to reduce the button image size. 
+    The smaller the padding, the bigger the image -->
+    <dimen name="ibs_bible_chapter_imgButtonPadding">10dp</dimen>
+    
+        <!-- Padding used for optional division themes -->
+    <dimen name="ibs_bible_chapter_verseTopPadding">42dp</dimen>
+    
+    <!-- The division theme checkbox height. Ensure this is relative to
+    #ibs_bible_chapter_verseTopPadding
+     -->
+    <dimen name="ibs_checkbox_divisionTheme_height">50dp</dimen>
+    <dimen name="ibs_checkbox_divisionTheme_marginTop">-12dp</dimen>
+    <dimen name="ibs_checkbox_divisionTheme_marginBottom">5dp</dimen>
+    <!-- Suggested is that of the #ibs_bible_verseNumber_padding -->
+    <dimen name="ibs_checkbox_divisionTheme_marginLeft">20sp</dimen>
+    
+	
+	
+	<!-- Starting dimens for study notes related items -->
+    <eat-comment/>   
+    
+    <!-- The height/width of the arrow used -->
+    <dimen name="ibs_notes_arrow_size">10dp</dimen>
+    <!-- The width used for both the title & list items of chapter -->
+    <dimen name="ibs_notes_chapter_width">115dp</dimen>
+    <!-- The width used for both the title & list items of verse -->
+    <dimen name="ibs_notes_verse_width">100dp</dimen>
+    
+    
+     <!-- Starting dimens for bible search items -->
+    <eat-comment/>
+    
+    <!-- vertical padding applied to top/bottom of search dialog items -->
+    <dimen name="ibs_bible_search_item_verticalPadding">8dp</dimen>
+    
+      <!-- Starting dimens for strongs items -->
+    <eat-comment/>
+ 
+    <!-- vertical padding applied to top/bottom definition items -->
+    <dimen name="ibs_wordStudyDef_strongs_verticalPadding">14dp</dimen>
+    <!-- vertical padding applied to top/bottom definition items -->
+    <dimen name="ibs_wordStudyDef_strongs_small_verticalPadding">9dp</dimen>
+    <!-- margin for the left side -->
+    <dimen name="ibs_wordStudyDef_strongs_def_marginLeft">16dp</dimen>
+    
+	<!-- Starting dimens for verse details items -->
+    <eat-comment/>
+ 
+    <!-- margin for the title-->
+    <dimen name="ibs_bible_verseDetails_title_margin">10dp</dimen>
+    <!-- vertical padding applied to top/bottom definition items -->
+    <dimen name="ibs_bible_verseDetails_verticalPadding">10dp</dimen>
+    <!-- vertical padding applied to top/bottom definition items -->
+    <dimen name="ibs_bible_verseDetails_item_marginLeft">16dp</dimen>
+    
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Red colour used in update button -->
+    <color name="ibs_upgrade_red">#F36364</color>
+    
+    <!-- Red colour used in update ripple effect -->
+    <color name="ibs_upgrade_red_ripple">#f38889</color>
+    
+    <!-- The grey used as the image background in google image search -->
+    <color name="ibs_googlesearch_grey">#f1f1f1</color>
+    
+    <!-- Translucent black used by toolbar in profile -->
+    <color name="ibs_translucent_black">#55111111</color>
+    
+    <!-- "White" as defined by this application -->
+    <color name="ibs_white">#efefef</color>
+    
+     <!-- "Black" as defined by this application -->
+    <color name="ibs_black">#080808</color>
+    
+    <!-- Lighter greay -->
+    <color name="ibs_light_gray">#949494</color>
+    
+    <!-- Gray used by footer selector state -->
+    <color name="ibs_gray">#727272</color>
+    
+    <!-- Dark Gray used for ??? -->
+    <color name="ibs_dark_gray">#424242</color>
+        
+    
+    <!-- Red to be used by errors etc. -->
+    <color name="ibs_red">#d20000</color>
+    
+    <!-- Between footer elements -->
+    <color name="ibs_divider_orange">#E6A264</color>	
+    
+    <!-- For buttons such as sign in -->
+	<color name="ibs_button_green">#25A25A</color>	
+	
+	<!-- For buttons such as sign up -->
+	<color name="ibs_button_blue">#26C3F0</color>
+	
+	<color name="colorToolbar">@color/ibs_translucent_black</color>
+	
+	
+    <!-- Background color of the app -->
+    <color name="bg_color">#181818</color>
+    
+	<!-- Standard Material design colors. Easy reference through the app, if needed.  -->
+	<eat-comment />
+	<color name="colorPrimary">#9C27B0</color>
+	<color name="colorPrimaryDark">#7B1FA2</color>
+	
+	<color name="colorAccent">#25A25A</color>
+	
+	<!-- <color name="windowBackground">Not set</color> -->
+	
+	<color name="textColorPrimary">@color/ibs_white</color>
+	<color name="textColorSecondary">#272727</color>
+   
+</resources>

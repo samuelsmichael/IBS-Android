@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ripple does not actually ripple on <5.0 for now. As such, we simply fill.  -->
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/btn_def_mtrl_shape_red_fill"/>
+</layer-list>

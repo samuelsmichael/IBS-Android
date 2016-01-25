@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/ibs_grid_width"
+    android:layout_height="@dimen/ibs_grid_height"
+   
+    android:orientation="vertical" 
+    android:gravity="center"
+    android:layout_margin="@dimen/min_item_margin"
+    
+    android:background="@drawable/btn_generic_accent_background"
+    >
+
+    <FrameLayout 
+         android:id="@+id/grid_item_frame_container"
+         android:layout_width="@dimen/ibs_grid_thumbnail_width"
+        android:layout_height="@dimen/ibs_grid_thumbnail_height"
+        >
+	    <ImageView
+	        android:id="@+id/grid_item_img"
+	        android:layout_width="@dimen/ibs_grid_thumbnail_width"
+	        android:layout_height="wrap_content"
+	        android:maxWidth="@dimen/ibs_grid_thumbnail_width"
+	        android:maxHeight="@dimen/ibs_grid_thumbnail_height"
+	        android:src="@null" 
+	        android:scaleType="fitCenter"
+	        android:visibility="gone"
+	        />
+	
+	    <ProgressBar
+	        android:id="@+id/grid_item_progress"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:visibility="gone"
+	        android:layout_gravity="center"
+	        />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/grid_item_img_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" 
+        android:layout_gravity="center_horizontal|top"
+        android:maxLines="3"
+        android:ellipsize="end"
+        style="@style/GridText"
+        />
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    
+	    android:orientation="vertical"
+	    android:gravity="center"
+	    android:paddingTop="@dimen/activity_vertical_margin"
+	    android:paddingBottom="5dp"
+	    android:paddingLeft="@dimen/activity_horizontal_margin"
+	    android:paddingRight="@dimen/activity_horizontal_margin">
+	    
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    
+	    android:orientation="vertical"
+	    android:gravity="center"
+	    >
+	    <TextView android:id="@+id/ibs_dialog_text_message"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          
+	          android:gravity="center"
+	          android:text="@string/ibs_title_createNewMarking"
+	          
+	          android:textAppearance="?android:attr/textAppearanceLarge"
+	          
+	          android:paddingBottom="@dimen/activity_vertical_margin" />
+		
+		<EditText
+	        android:id="@+id/ibs_dialog_input"
+	        style="@style/WhiteEditText"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:hint="@string/ibs_hint_customMarking"
+	        android:inputType="text" />
+		
+		<TextView
+	            android:id="@+id/ibs_addedit_sortby_title"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/ibs_label_library"
+	            style="@style/SubText" 
+	            android:gravity="left|center_vertical"
+	            
+	            />
+		
+		 <android.support.v7.widget.RecyclerView
+	        android:id="@+id/dialog_createMarking_recyclerView"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/ibs_horizontal_lettering_list_height"
+	        android:scrollbars="none" />
+		 
+	
+	
+		  <com.inductivebiblestudyapp.ui.widget.ExpandableHeightGridView
+		        android:id="@+id/ibs_dialog_grid_createMarking"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		    	
+		    	android:numColumns="auto_fit"
+		    	android:columnWidth="@dimen/min_touch_size"
+		    	android:isScrollContainer="false"
+		    	android:choiceMode="multipleChoice"
+		    	
+		    	android:fadingEdge="none"
+		    	
+		        />
+		
+		<LinearLayout 
+		    android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal"
+		    >
+		
+		    <Button
+		            android:id="@+id/ibs_dialog_button_negative"
+		            android:layout_width="match_parent"
+		            android:layout_height="@dimen/ibs_button_height"
+		            
+		            android:text="@string/ibs_button_cancel"
+		            android:textAppearance="?android:attr/textAppearanceMedium"
+		            android:textColor="@color/textColorPrimary" 
+		            android:theme="@style/GrayButtonStyle"
+		            android:layout_weight="1.0"
+		            />
+		        <Button
+		            android:id="@+id/ibs_dialog_button_positive"
+		            android:layout_width="match_parent"
+		            android:layout_height="@dimen/ibs_button_height"
+		            
+		            android:text="@string/ibs_button_save"
+		            android:textAppearance="?android:attr/textAppearanceMedium"
+		            android:textColor="@color/textColorPrimary" 
+		            android:layout_weight="1.0"
+		            />
+		        
+		        
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>
